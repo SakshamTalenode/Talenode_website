@@ -389,7 +389,7 @@
   width: 80%;
   border-radius: 80px;
   /* padding-left: 91px; */
-  padding-top: 45px;
+  padding-top: 40px;
 }
 
 .header-subCard p{
@@ -593,6 +593,110 @@
   text-align: center;
   font-family: Poppins;
   font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* PRODUCT PAGE - START */
+
+.productPage{
+  background-color: #F0F8EA;
+  padding-top: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+  padding-left: 9vw;
+  padding-right: 9vw;
+}
+
+.hero-product{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-product img{
+  object-fit: contain;
+  /* height: 148px; */
+  
+}
+
+.header-heroProduct{
+  color: var(--sub-heading, #404040);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.tagline-heroProduct{
+  color: var(--sub-heading, #404040);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 40px;
+}
+
+.sec2-product{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-feature{
+  display: flex;
+  justify-content: space-between;
+}
+
+.reverse-product{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.reverse-product img{
+  object-fit: contain;
+  width: 35%;
+}
+
+.product-feature img{
+  object-fit: contain;
+  width: 35%;
+}
+
+.feature-sec1{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.head-feature{
+  color: var(--sub-heading, #404040);
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.desc-feature{
+  /* width: 70%; */
+  color: var(--sub-heading, #404040);
+  font-family: Poppins;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

@@ -1,9 +1,37 @@
-import React from 'react'
+import React, {useState} from 'react';
 
-const Product = () => {
+const Product = ({prop}) => {
+
+  const [toggle, setToggle] = useState(true);
+
   return (
-    <div>
-      
+    <div className='productPage'>
+      <div className='hero-product'>
+        <p className='header-heroProduct'>{prop.headerLand}</p>
+        <p className='tagline-heroProduct'>{prop.tagLand}</p>
+        <img src={prop.heroImg}/>
+      </div>
+
+      <div className='sec2-product'>
+        <p className='header-heroProduct'>{prop.header2}</p>
+
+        {prop.productFeatures.map((feature) => (
+            <div className={toggle ? "product-feature" : "reverse-product"}>
+              <div className='feature-sec1'>
+                <p className='head-feature'>{feature.name}</p>
+                <p className='desc-feature'>{feature.desc}</p>
+                <button>
+                  Demo
+                </button>
+              </div>
+            
+              <img src={feature.img}/>
+            </div>
+        )
+        )
+        }
+      </div>
+
     </div>
   )
 }
