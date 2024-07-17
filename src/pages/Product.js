@@ -16,10 +16,12 @@ const Product = ({prop}) => {
         <p className='header-heroProduct'>{prop.header2}</p>
 
         {prop.productFeatures.map((feature) => (
-            <div className={toggle ? "product-feature" : "reverse-product"}>
+            <div className={feature.toggle ? "product-feature" : "reverse-product"}>
               <div className='feature-sec1'>
-                <p className='head-feature'>{feature.name}</p>
-                <p className='desc-feature'>{feature.desc}</p>
+                <div>
+                  <p className='head-feature'>{feature.name}</p>
+                  <p className='desc-feature'>{feature.desc}</p>
+                </div>
                 <button>
                   Demo
                 </button>
@@ -30,6 +32,13 @@ const Product = ({prop}) => {
         )
         )
         }
+      </div>
+
+      <div className='sec3-product'>
+        <p>Sample Content multi-line</p>
+        <button>
+          Demo
+        </button>
       </div>
 
     </div>
