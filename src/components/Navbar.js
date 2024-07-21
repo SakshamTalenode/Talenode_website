@@ -86,7 +86,7 @@ const Navbar = () => {
         </div>
 
         <div class="dropdown">
-          <Link onClick={() => {
+          <Link to="/Resources" onClick={() => {
           window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
         }} class="dropbtn flex items-center justify-evenly gap-1.5">
             Resources
@@ -107,16 +107,16 @@ const Navbar = () => {
           </Link>
           <div class="dropdown-content">
             <div className="dropdown-content-container">
-              <Link  className="drop-link">• Case Studies</Link>
-              <Link className="drop-link">• Blogs</Link>
-              <Link className="drop-link">• Whitepapers</Link>
-              <Link className="drop-link">• Webinars</Link>
+              <a href="/Resources/#case-studies" className="drop-link">• Case Studies</a>
+              <a href="/Resources/#blogs" className="drop-link">• Blogs</a>
+              <a href="/Resources/#whitepapers" className="drop-link">• Whitepapers</a>
+              <a href="/Resources/#whitepapers" className="drop-link">• Webinars</a>
             </div>
           </div>
         </div>
 
         <div class="dropdown">
-          <Link onClick={() => {
+          <Link to="/About" onClick={() => {
               window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
             }} class="dropbtn flex items-center justify-evenly gap-1.5">
             About Us
