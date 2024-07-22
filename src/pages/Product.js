@@ -2,8 +2,6 @@ import React, {useState} from 'react';
 
 const Product = ({prop}) => {
 
-  const [toggle, setToggle] = useState(true);
-
   return (
     <div className='productPage'>
       <div className='hero-product'>

@@ -104,7 +104,7 @@ const Solutions = () => {
       <div className="vs-solutions flex flex-col justify-between items-center gap-12">
         <div className="vs-headings flex flex-col gap-5 justify-center items-center">
           <p className="headerUC-short text-center">Our Product vs Other Vendors</p>
-          <p className="tagUC-short text-center">Talenode tackles the complexities of people analytics so that you can focus on what truly matters...</p>
+          <p className="tagUC-short text-center">Talenode tackles the complexities of people analytics so that you can focus on what truly matters...</p>
         </div>
         <div className='vs-main flex justify-between items-center'>
           <div className="vs-left flex justify-between items-center">

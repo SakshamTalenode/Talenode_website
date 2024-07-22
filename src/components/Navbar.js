@@ -2,9 +2,15 @@ import React, { useState, useEffect } from "react";
 import { Link, redirect, redirectDocument } from "react-router-dom";
 import navLogo from "../assets/nav-logo.png";
 import { products, useCases } from "../utils/data";
+import dropbtn from "../assets/dropbtn.png";
+import dropbtn2 from "../assets/dropbtn2.png";
+import { SlArrowDown } from "react-icons/sl";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [toggle, setToggle] = useState(false);
+
+  const [dropbutton, setDropbutton] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,9 +27,12 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // useEffect(() => setDropbutton(false))
+  
+
   return (
     <div className="navbar">
-      <Link
+      <Link className="nav-logo-container"
         onClick={() => {
           window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
         }}
@@ -33,7 +42,7 @@ const Navbar = () => {
       </Link>
 
       <div className="nav-headers">
-        <div class="dropdown">
+        <div className="dropdown">
           <Link
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -57,7 +66,7 @@ const Navbar = () => {
               />
             </svg>
           </Link>
-          <div class="dropdown-content">
+          <div className="dropdown-content">
             <div className="dropdown-content-container">
               <p>By product</p>
               {products.map((product) => (
@@ -75,9 +84,13 @@ const Navbar = () => {
             <div className="dropdown-content-container">
               <p>By use Case</p>
               {useCases.map((useCase) => (
-                <Link onClick={() => {
-          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-        }} to={`/useCases/${useCase.name}`} className="drop-link">
+                <Link
+                  onClick={() => {
+                    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                  }}
+                  to={`/useCases/${useCase.name}`}
+                  className="drop-link"
+                >
                   • {useCase.name}
                 </Link>
               ))}
@@ -86,9 +99,13 @@ const Navbar = () => {
         </div>
 
         <div class="dropdown">
-          <Link to="/Resources" onClick={() => {
-          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-        }} class="dropbtn flex items-center justify-evenly gap-1.5">
+          <Link
+            to="/Resources"
+            onClick={() => {
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            }}
+            class="dropbtn flex items-center justify-evenly gap-1.5"
+          >
             Resources
             <svg
               className="down-button-hover"
@@ -107,18 +124,30 @@ const Navbar = () => {
           </Link>
           <div class="dropdown-content">
             <div className="dropdown-content-container">
-              <a href="/Resources/#case-studies" className="drop-link">• Case Studies</a>
-              <a href="/Resources/#blogs" className="drop-link">• Blogs</a>
-              <a href="/Resources/#whitepapers" className="drop-link">• Whitepapers</a>
-              <a href="/Resources/#whitepapers" className="drop-link">• Webinars</a>
+              <a href="/Resources/#case-studies" className="drop-link">
+                • Case Studies
+              </a>
+              <a href="/Resources/#blogs" className="drop-link">
+                • Blogs
+              </a>
+              <a href="/Resources/#whitepapers" className="drop-link">
+                • Whitepapers
+              </a>
+              <a href="/Resources/#whitepapers" className="drop-link">
+                • Webinars
+              </a>
             </div>
           </div>
         </div>
 
         <div class="dropdown">
-          <Link to="/About" onClick={() => {
-              window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-            }} class="dropbtn flex items-center justify-evenly gap-1.5">
+          <Link
+            to="/About"
+            onClick={() => {
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            }}
+            class="dropbtn flex items-center justify-evenly gap-1.5"
+          >
             About Us
             <svg
               className="down-button-hover"
@@ -144,6 +173,92 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="nav-mobile flex flex-col">
+        <a
+          onClick={() => {
+            setDropbutton(!dropbutton);
+          }}
+          href="javascript:void(0)"
+        >
+          <img src={dropbutton ? dropbtn2 : dropbtn} />
+        </a>
+        {dropbutton ? (
+          <div className="drop-content flex flex-col gap-4">
+            <div onClick={() => setToggle(!toggle)} className={toggle ? "dropdown" : "dropdown2"}>
+              <div
+                onClick={() => {
+                  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                }}
+                to="/Solutions"
+                className="dropbtn flex items-center gap-1.5"
+              >
+                Solutions
+                <SlArrowDown className="down-button-hover" />
+              </div>
+              <div class={toggle ? "dropdown-content-mob" : "hidden"}>
+                <div className="dropdown-content-container-mob">
+                  <p>By product</p>
+                  {products.map((product) => (
+                    <Link
+                      onClick={() => {
+                        window.scrollTo({
+                          top: 0,
+                          left: 0,
+                          behavior: "smooth",
+                        });
+                      }}
+                      to={`/products/${product.name}`}
+                      className="drop-link"
+                    >
+                      • {product.name}
+                    </Link>
+                  ))}
+                </div>
+                <div className="dropdown-content-container-mob">
+                  <p>By use Case</p>
+                  {useCases.map((useCase) => (
+                    <Link
+                      onClick={() => {
+                        window.scrollTo({
+                          top: 0,
+                          left: 0,
+                          behavior: "smooth",
+                        });
+                      }}
+                      to={`/useCases/${useCase.name}`}
+                      className="drop-link"
+                    >
+                      • {useCase.name}
+                    </Link>                    
+                  ))}
+                </div>
+              </div>
+            </div>
+              <Link
+                to="/Resources"
+                onClick={() => {
+                  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                }}
+                className="dropbtn flex items-center justify-evenly gap-1.5"
+              >
+                Resources
+              </Link>
+
+              <Link
+                to="/About"
+                onClick={() => {
+                  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                }}
+                className="dropbtn flex items-center justify-evenly gap-1.5"
+              >
+                About Us
+              </Link>
+          </div>
+        ) : (
+          <div className="empty-navmob"></div>
+        )}
       </div>
     </div>
   );

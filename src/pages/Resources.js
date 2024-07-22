@@ -3,6 +3,7 @@ import sample from "../assets/DataDrive-hero.png"
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import SubscribeCard from "../components/SubscribeCard";
+import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 
 const Resources = (props) => {
   const responsive = {
@@ -76,6 +77,8 @@ const Resources = (props) => {
       </div>
 
       <div id="case-studies" className="caseStudies-resources">
+        <SlArrowLeft  className="arrowleft"/>
+        <SlArrowRight className="arrowright"/>
         <p className=" text-center">Case Studies</p>
         <Carousel
           className="carousel-CS"
