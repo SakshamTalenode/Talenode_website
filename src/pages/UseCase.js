@@ -15,10 +15,10 @@ const UseCase = ({ prop }) => {
 
       <div className="uc-sec2 w-full gap-10">
         <div className="flex flex-col justify-center items-center gap-4">
-          <p className="header-heroProduct">{prop.header2}</p>
-          <p className="tagline-heroProduct tag-ucSec2">{prop.tag2}</p>
+          <p className="header-heroProduct uc-header-mob">{prop.header2}</p>
+          <p className="tagline-heroProduct tag-ucSec2 uc-tag-mob">{prop.tag2}</p>
         </div>
-        <div className="w-full flex justify-between flex-wrap">
+        <div className="problem-cards w-full flex justify-between flex-wrap">
           {prop.problems.map((problem) => (
             <div className="problem-card">
               <p>{problem}</p>

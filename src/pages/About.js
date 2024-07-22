@@ -3,6 +3,7 @@ import hero from "../assets/hero-about.png";
 import CarouselAbout from "../components/CarouselAbout";
 import Marquee from "react-fast-marquee";
 import logo from "../assets/nav-logo.png";
+import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 
 
 const About = () => {
@@ -40,6 +41,8 @@ const About = () => {
           </p>
         </div>
         <div className="sec2-leaders carousel-about">
+          <SlArrowLeft  className="arrowleft"/>
+          <SlArrowRight className="arrowright"/>
           <CarouselAbout />
         </div>
       </div>

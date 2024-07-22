@@ -120,8 +120,6 @@ html {
   transform: rotate(180deg);
 }
 
-
-
 .nav-headers{
   display: flex;
   justify-content: space-evenly;
@@ -1084,7 +1082,7 @@ html {
   }
 
   .header-heroProduct{
-    font-size: 35px;
+    font-size: 25px;
     /* width: 100%; */
     padding-bottom: 10px;
   }
@@ -1127,7 +1125,7 @@ html {
   .sec3-product{
     padding: 0;
     width: 100%;
-    height: 100px;
+    height: 75px;
     gap: 0px;
     margin-bottom: 50px;
     
@@ -1185,7 +1183,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 220px;
+  width: 275px;
   height: 400px;
   flex-shrink: 0;
   border-radius: 40px;
@@ -1241,6 +1239,93 @@ html {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+@media (max-width: 1100px) {
+  .ucPage{
+    overflow-x: hidden;
+    width: 100vw;
+    padding: 0 5vw;
+    padding-top: 120px;
+    gap: 50px;
+  }
+
+  .heroUC{
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .heroUC-sec1{
+    width: 100%;
+  }
+
+  .header-hero{
+    font-size: 25px;
+  }
+
+  .uc-sec2{
+    padding: 0;
+    gap: 30px;
+  }
+
+  .uc-sec2 div{
+    gap: 0;
+  }
+
+  .uc-header-mob{
+    width: 80%;
+    font-size: 25px;
+  }
+
+  .uc-tag-mob{
+    width: 80%;
+    font-size: 15px;
+  }
+
+  .problem-cards{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* gap: 100px; */
+    
+  }
+
+  .problem-card{
+    width: 47%;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  .solutionUC-card{
+    height: 200px;
+    padding: 0;
+    font-size: 25px;
+  }
+
+  .uc-sec2 button{
+    padding: 20px 0;
+    width: 100%;
+  }
+
+  .sec3-product{
+    padding: 0;
+    width: 100%;
+    height: 75px;
+    gap: 0px;
+    margin-bottom: 50px;
+  }
+
+  .sec3-product p{
+    width: 47%;
+    font-size: 15px;
+  }
+
+  .sec3-product button{
+    padding: 10px 10px;
+    font-size: 15px;
+    border-radius: 7px;
+  }
+
 }
 
 /* USE-CASE PAGE - END */
@@ -2018,3 +2103,105 @@ html {
   align-items: center;
   margin-bottom: 20px;
 }
+
+@media (max-width: 1100px) {
+  .aboutPage{
+    overflow-x: hidden;
+    width: 100vw;
+    padding: 0 5vw;
+    padding-top: 120px;
+    padding-bottom: 50px;
+  }
+
+  .hero-about{
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .hero-about div{
+    width: 100%;
+  }
+
+  .headerHero-about{
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .tagHero-about{
+    width: 100%;
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .hero-about img{
+    width: 100%;
+  }
+
+  .sec2-about{
+    width: 100%;
+    padding: 0;
+  }
+
+  .cards-about{
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cards-about div{
+    width: 100%;
+    height: 150px;
+  }
+
+  .leaders-about{
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .sec1-leaders{
+    width: 100%;
+  }
+
+  .sec2-leaders{
+    width: 100%;
+    padding: 0;
+    margin-bottom: -40px;
+  }
+
+  .marquee-aboutPage{
+    padding: 0;
+  }
+
+  .marquee-aboutPage p{
+    padding-bottom: 20px;
+  }
+
+  .contact-about{
+    width: 100%;
+    padding: 0;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .sec1-contact{
+    width: 100%;
+  }
+
+  .contact-details{
+    width: 100%;
+    text-align: center;
+  }
+
+  .sec2-contact{
+    width: 100%;
+    height: 200px;
+  }
+}
+
+/* ABOUT PAGE - END */
