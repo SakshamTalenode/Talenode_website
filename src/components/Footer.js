@@ -20,7 +20,7 @@ const Footer = () => {
                 <p>About Us</p>
                 <p>Contact Us</p>
             </div>
-            <div className='sec2-footer'>
+            <div className='sec2-footer footer-hide-mobile'>
                 <h3>Website Links</h3>
                 <p>Home</p>
                 <p>Solutions</p>
