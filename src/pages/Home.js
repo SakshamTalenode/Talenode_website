@@ -14,7 +14,7 @@ const Home = () => {
               Building a Valuable, Forward-Thinking Talent Organization.
             </p>
             <p className="tagline-hero">
-              Talenode tackles the complexities of people analytics so that you
+              Talenode tackles the complexities of people analytics so that you
               can focus on what truly matters...
             </p>
           </div>
@@ -33,7 +33,7 @@ const Home = () => {
           Talenode tackles the complexities of people analytics so that you can
           focus on what truly matters...
         </p>
-        <div className="cards-home-sec2">
+        <div className="cards-home-sec2 flex-wrap">
           <div className="card-sec2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +95,7 @@ const Home = () => {
 
       <div className="home-sec2 home-sec3">
         <p className="header-sec2 header-sec3">
-          People Analytics Journey Comes With It’s Challenges
+          People Analytics Journey Comes With It's Challenges
         </p>
         <p className="tagline-sec2 tagline-sec3">
           A multi-line statement elaborating challenges
