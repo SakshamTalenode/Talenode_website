@@ -77,8 +77,8 @@ const Resources = (props) => {
       </div>
 
       <div id="case-studies" className="caseStudies-resources">
-        <SlArrowLeft  className="arrowleft"/>
-        <SlArrowRight className="arrowright"/>
+        {/* <SlArrowLeft  className="arrowleft"/>
+        <SlArrowRight className="arrowright"/> */}
         <p className=" text-center">Case Studies</p>
         <Carousel
           className="carousel-CS"
@@ -99,7 +99,7 @@ const Resources = (props) => {
           // dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
         >
-          <div>Case Study 1</div>
+          <div>Case Study 1 <br/> (SWIPE -->)</div>
           <div>Case Study 2</div>
           <div>Case Study 3</div>
           <div>Case Study 4</div>
