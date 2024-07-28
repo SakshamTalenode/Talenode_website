@@ -11,7 +11,6 @@ import Solutions from "./pages/Solutions";
 import Resources from "./pages/Resources";
 import About from "./pages/About";
 
-
 function App() {
   useEffect(() => {
     // 👇️ scroll to top on page load
@@ -37,7 +36,10 @@ function App() {
           />
         ))}
         <Route path="/Resources" element={<Resources />} />
+        
+        
         <Route path="/About" element={<About />} />
+
 
         
       </Routes>

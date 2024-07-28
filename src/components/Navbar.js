@@ -100,7 +100,7 @@ const Navbar = () => {
 
         <div class="dropdown">
           <Link
-            to="/Resources"
+            to="/Resources/#"
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             }}
@@ -192,7 +192,7 @@ const Navbar = () => {
                   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                 }}
                 to="/Solutions"
-                className="dropbtn flex items-center gap-1.5"
+                className="dropbtn flex items-center gap-2"
               >
                 Solutions
                 <SlArrowDown className="down-button-hover" />
@@ -241,7 +241,7 @@ const Navbar = () => {
                 onClick={() => {
                   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                 }}
-                className="dropbtn flex items-center justify-evenly gap-1.5"
+                className="dropbtn dropdown gap-1.5"
               >
                 Resources
               </Link>
@@ -251,7 +251,7 @@ const Navbar = () => {
                 onClick={() => {
                   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                 }}
-                className="dropbtn flex items-center justify-evenly gap-1.5"
+                className="dropbtn dropdown gap-1.5"
               >
                 About Us
               </Link>

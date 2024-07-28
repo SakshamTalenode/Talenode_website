@@ -133,8 +133,10 @@ html {
 }
 
 @media (max-width: 1100px){
+  
+
   .navbar{
-    height: 100px;
+    height: 75px;
     display: flex;
     justify-content: space-between;
     gap: 0px;
@@ -149,7 +151,7 @@ html {
   }
 
   .nav-logo{
-    width: 100%;
+    width: 90%;
   }
   
   .nav-headers{
@@ -166,7 +168,7 @@ html {
 
   .nav-mobile a img{
     object-fit: contain;
-    width: 60px;
+    width: 50px;
     padding: 10px;
     border: 2px solid #4A7C29;
     border-radius: 10px;
@@ -181,9 +183,15 @@ html {
     position: absolute;
     top: 90px;
     right: 40px;
+    /* text-align: right; */
   }
 
   .dropdown2{
+    /* text-align: left; */
+    padding: 0px 20px;
+  }
+  .dropdown{
+    /* text-align: left; */
     padding: 0px 20px;
   }
 
@@ -1885,6 +1893,7 @@ html {
 
   .carousel-CS{
     padding: 10px;
+    padding-bottom: 40px;
   }
 
   .carousel-CS div{
@@ -2277,6 +2286,14 @@ html {
   .sec2-contact{
     width: 100%;
     height: 200px;
+  }
+
+  .homePage::-webkit-scrollbar {
+    display: none;
+  }
+
+  .disableTag-phone{
+    display: none;
   }
 }
 

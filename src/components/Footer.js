@@ -9,16 +9,16 @@ const Footer = () => {
     <div className='footer'>
         <div className='footer-main'>
             <div className='sec1-footer'>
-                <img src={logo}/>
+                <a href='/'><img src={logo}/></a>
                 <p>Talenode tackles the complexities of people analytics so that you can focus on what truly matters...</p>
             </div>
             <div className='sec2-footer'>
                 <h3>Website Links</h3>
-                <p>Home</p>
-                <p>Solutions</p>
-                <p>Resources</p>
-                <p>About Us</p>
-                <p>Contact Us</p>
+                <a href='/'><p>Home</p></a>
+                <a href='/Solutions'><p className='disableTag-phone'>Solutions</p></a>
+                <a href='/Resources'><p>Resources</p></a>
+                <a href='/About'><p>About Us</p></a>
+                <a href='/About/#contact-us'><p>Contact Us</p></a>
             </div>
             <div className='sec2-footer footer-hide-mobile'>
                 <h3>Website Links</h3>
