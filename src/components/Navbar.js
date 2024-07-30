@@ -5,6 +5,7 @@ import { products, useCases } from "../utils/data";
 import dropbtn from "../assets/dropbtn.png";
 import dropbtn2 from "../assets/dropbtn2.png";
 import { SlArrowDown } from "react-icons/sl";
+import { HiArrowSmallRight } from "react-icons/hi2";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -28,11 +29,11 @@ const Navbar = () => {
   }, []);
 
   // useEffect(() => setDropbutton(false))
-  
 
   return (
     <div className="navbar">
-      <Link className="nav-logo-container"
+      <Link
+        className="nav-logo-container"
         onClick={() => {
           window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
         }}
@@ -48,23 +49,11 @@ const Navbar = () => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             }}
             to="/Solutions"
-            class="dropbtn flex items-center gap-1.5"
+            className="dropbtn flex items-center gap-1.5"
           >
-            Solutions
-            <svg
-              className="down-button-hover"
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="11"
-              viewBox="0 0 22 13"
-              fill="none"
-            >
-              {" "}
-              <path
-                d="M2.44347 0.759229C1.93077 0.246528 1.09946 0.246723 0.586996 0.759666C0.0749416 1.2722 0.0750656 2.10272 0.587275 2.6151L9.76976 11.8008C9.93176 11.9638 10.1244 12.0932 10.3366 12.1815C10.5488 12.2697 10.7763 12.3152 11.0061 12.3152C11.236 12.3152 11.4635 12.2697 11.6757 12.1815C11.8879 12.0932 12.0805 11.9638 12.2425 11.8008L21.4298 2.61503C21.9422 2.10279 21.9422 1.27222 21.4299 0.75994C20.9177 0.247727 20.0873 0.247689 19.575 0.759854L11.0088 9.32452L2.44347 0.759229Z"
-                fill="#404040"
-              />
-            </svg>
+            <p>
+              Solutions
+            </p>
           </Link>
           <div className="dropdown-content">
             <div className="dropdown-content-container">
@@ -75,9 +64,9 @@ const Navbar = () => {
                     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                   }}
                   to={`/products/${product.name}`}
-                  className="drop-link"
+                  className="drop-link drop-link-sol"
                 >
-                  • {product.name}
+                  {product.name}<HiArrowSmallRight className="nav-link-highlight" />
                 </Link>
               ))}
             </div>
@@ -89,9 +78,9 @@ const Navbar = () => {
                     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                   }}
                   to={`/useCases/${useCase.name}`}
-                  className="drop-link"
+                  className="drop-link drop-link-sol"
                 >
-                  • {useCase.name}
+                  {useCase.name}<HiArrowSmallRight className="nav-link-highlight" />
                 </Link>
               ))}
             </div>
@@ -104,37 +93,23 @@ const Navbar = () => {
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             }}
-            class="dropbtn flex items-center justify-evenly gap-1.5"
+            className="dropbtn flex items-center justify-evenly gap-1.5"
           >
-            Resources
-            <svg
-              className="down-button-hover"
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="11"
-              viewBox="0 0 22 13"
-              fill="none"
-            >
-              {" "}
-              <path
-                d="M2.44347 0.759229C1.93077 0.246528 1.09946 0.246723 0.586996 0.759666C0.0749416 1.2722 0.0750656 2.10272 0.587275 2.6151L9.76976 11.8008C9.93176 11.9638 10.1244 12.0932 10.3366 12.1815C10.5488 12.2697 10.7763 12.3152 11.0061 12.3152C11.236 12.3152 11.4635 12.2697 11.6757 12.1815C11.8879 12.0932 12.0805 11.9638 12.2425 11.8008L21.4298 2.61503C21.9422 2.10279 21.9422 1.27222 21.4299 0.75994C20.9177 0.247727 20.0873 0.247689 19.575 0.759854L11.0088 9.32452L2.44347 0.759229Z"
-                fill="#404040"
-              />
-            </svg>
+            <p>Resources</p>
           </Link>
           <div class="dropdown-content">
             <div className="dropdown-content-container">
               <a href="/Resources/#case-studies" className="drop-link">
-                • Case Studies
+                Case Studies<HiArrowSmallRight className="nav-link-highlight" />
               </a>
               <a href="/Resources/#blogs" className="drop-link">
-                • Blogs
+                Blogs<HiArrowSmallRight className="nav-link-highlight" />
               </a>
               <a href="/Resources/#whitepapers" className="drop-link">
-                • Whitepapers
+                Whitepapers<HiArrowSmallRight className="nav-link-highlight" />
               </a>
               <a href="/Resources/#whitepapers" className="drop-link">
-                • Webinars
+                Webinars<HiArrowSmallRight className="nav-link-highlight" />
               </a>
             </div>
           </div>
@@ -146,30 +121,16 @@ const Navbar = () => {
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             }}
-            class="dropbtn flex items-center justify-evenly gap-1.5"
+            className="dropbtn flex items-center justify-evenly gap-1.5"
           >
-            About Us
-            <svg
-              className="down-button-hover"
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="11"
-              viewBox="0 0 22 13"
-              fill="none"
-            >
-              {" "}
-              <path
-                d="M2.44347 0.759229C1.93077 0.246528 1.09946 0.246723 0.586996 0.759666C0.0749416 1.2722 0.0750656 2.10272 0.587275 2.6151L9.76976 11.8008C9.93176 11.9638 10.1244 12.0932 10.3366 12.1815C10.5488 12.2697 10.7763 12.3152 11.0061 12.3152C11.236 12.3152 11.4635 12.2697 11.6757 12.1815C11.8879 12.0932 12.0805 11.9638 12.2425 11.8008L21.4298 2.61503C21.9422 2.10279 21.9422 1.27222 21.4299 0.75994C20.9177 0.247727 20.0873 0.247689 19.575 0.759854L11.0088 9.32452L2.44347 0.759229Z"
-                fill="#404040"
-              />
-            </svg>
+            <p>About Us</p>
           </Link>
           <div class="dropdown-content drop-exception">
             <div className="dropdown-content-container px-0">
-              <Link className="drop-link">• Mission</Link>
-              <Link className="drop-link">• Vision</Link>
-              <Link className="drop-link">• Leadership Team</Link>
-              <Link className="drop-link">• Contact Us</Link>
+              <Link className="drop-link">Mission<HiArrowSmallRight className="nav-link-highlight" /></Link>
+              <Link className="drop-link">Vision<HiArrowSmallRight className="nav-link-highlight" /></Link>
+              <Link className="drop-link">Team<HiArrowSmallRight className="nav-link-highlight" /></Link>
+              <Link className="drop-link">Contact Us<HiArrowSmallRight className="nav-link-highlight" /></Link>
             </div>
           </div>
         </div>
@@ -186,7 +147,10 @@ const Navbar = () => {
         </a>
         {dropbutton ? (
           <div className="drop-content flex flex-col gap-4">
-            <div onClick={() => setToggle(!toggle)} className={toggle ? "dropdown" : "dropdown2"}>
+            <div
+              onClick={() => setToggle(!toggle)}
+              className={toggle ? "dropdown" : "dropdown2"}
+            >
               <div
                 onClick={() => {
                   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -231,30 +195,30 @@ const Navbar = () => {
                       className="drop-link"
                     >
                       • {useCase.name}
-                    </Link>                    
+                    </Link>
                   ))}
                 </div>
               </div>
             </div>
-              <Link
-                to="/Resources"
-                onClick={() => {
-                  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-                }}
-                className="dropbtn dropdown gap-1.5"
-              >
-                Resources
-              </Link>
+            <Link
+              to="/Resources"
+              onClick={() => {
+                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              }}
+              className="dropbtn dropdown gap-1.5"
+            >
+              Resources
+            </Link>
 
-              <Link
-                to="/About"
-                onClick={() => {
-                  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-                }}
-                className="dropbtn dropdown gap-1.5"
-              >
-                About Us
-              </Link>
+            <Link
+              to="/About"
+              onClick={() => {
+                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              }}
+              className="dropbtn dropdown gap-1.5"
+            >
+              About Us
+            </Link>
           </div>
         ) : (
           <div className="empty-navmob"></div>

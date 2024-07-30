@@ -201,7 +201,7 @@ export const useCases = [
     },
 
     {
-        name: "DataCleaning",
+        name: "Data Cleaning",
         headerLand: "Building a Valuable, Forward-Thinking Talent Organization.",
         tagLand: "Talenode tackles the complexities of people analytics so that you can focus on what truly matters...",
         landImg: datadriveimg,

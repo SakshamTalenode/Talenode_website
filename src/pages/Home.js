@@ -120,7 +120,7 @@ const Home = () => {
       </div>
 
       <div className="carousel-home">
-        <Marquee pauseOnHover="true" direction="right" speed={100}>
+        <Marquee pauseOnHover="true" direction="right" speed={50}>
           <div className="marquee">
             <img src={logo} />
             <img src={logo} />
