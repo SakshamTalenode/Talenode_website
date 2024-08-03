@@ -1730,10 +1730,10 @@ html {
 
 .vs-left{
   width: 75%;
-  height: 90%;
-  border: 10px solid #4A7C29;
+  height: 400px;
+  /* border: 10px solid #4A7C29; */
   border-radius: 30px;
-  background-color: #F0F8EA;
+  background-color: white;
   padding: 50px 0px;
 }
 
@@ -1748,6 +1748,7 @@ html {
 
 .vs-right{
   width: 20%;
+  height: 400px;
 }
 
 .vs-right button{
@@ -2414,3 +2415,19 @@ html {
 }
 
 /* ABOUT PAGE - END */
+
+
+.slick-prev:before,
+.slick-next:before
+{
+    
+    font-family: 'slick';
+    font-size: 40px;
+    line-height: 1;
+
+    opacity: .75;
+    color: #404040;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

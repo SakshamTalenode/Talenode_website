@@ -125,7 +125,7 @@ const Solutions = () => {
               </div>
             </div>
           </div>
-          <div className="vs-right flex justify-between items-center flex-col gap-10">
+          <div className="vs-right flex justify-between items-center flex-col">
             {products.map((product) => (
               <button style={currBtn.name === product.name ? {background:"#9FD47C", color:"#404040", border:"5px solid #4A7C29"} : {background: "#4A7C29"}} onClick={() => setCurrBtn(product)}>
                 {product.name}
