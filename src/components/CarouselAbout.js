@@ -1,32 +1,39 @@
-import React from 'react';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
+import React from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import leader from "../assets/leader.png";
-
-
+import Slider from "react-slick";
 
 const CarouselAbout = () => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 750,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <div>
-      <Carousel className='carouselAbout' showArrows={true} showIndicators={false} showThumbs={false} showStatus={false}>
-            <div>
-              <img src={leader} />
-              <p className="pt-3 heroCA">Leader Name 1</p>
-              <p className='tagCA'>Description</p>
-            </div>
-            <div>
-              <img src={leader} />
-              <p className="heroCA pt-3">Legend 2</p>
-              <p className='tagCA'>Description</p>
-            </div>
-            <div>
-              <img src={leader} />
-              <p className="heroCA pt-3">Legend 3</p>
-              <p className='tagCA'>Description</p>
-            </div>
-          </Carousel>
+      <Slider className="slider-about" {...settings}>
+        <div className="flex flex-col gap-3">
+          <img src={leader}/>
+          <h3 className="text-center">Leader 1</h3>
+          <p className="text-center">Description</p>
+        </div>
+        <div className="flex flex-col gap-3">
+          <img src={leader}/>
+          <h3 className="text-center">Leader 2</h3>
+          <p className="text-center">Description</p>
+        </div>
+        <div className="flex flex-col gap-3">
+          <img src={leader}/>
+          <h3 className="text-center">Leader 3</h3>
+          <p className="text-center">Description</p>
+        </div>
+      </Slider>
     </div>
-  )
-}
+  );
+};
 
-export default CarouselAbout
+export default CarouselAbout;

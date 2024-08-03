@@ -1,4 +1,5 @@
 import React from "react";
+import Tilt from "react-parallax-tilt";
 
 const UseCase = ({ prop }) => {
   return (
@@ -20,9 +21,11 @@ const UseCase = ({ prop }) => {
         </div>
         <div className="problem-cards w-full flex justify-between flex-wrap">
           {prop.problems.map((problem) => (
+            <Tilt>
             <div className="problem-card">
               <p>{problem}</p>
             </div>
+            </Tilt>
           ))}
         </div>
         <div className="solutionUC-card pt-5">

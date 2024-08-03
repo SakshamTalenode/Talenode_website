@@ -4,7 +4,8 @@ import CarouselAbout from "../components/CarouselAbout";
 import Marquee from "react-fast-marquee";
 import logo from "../assets/nav-logo.png";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
-
+import Tilt from "react-parallax-tilt";
+import { CCarousel, CCarouselItem, CCarouselCaption, CImage } from "@coreui/react";
 
 const About = () => {
   return (
@@ -27,8 +28,8 @@ const About = () => {
           focus on what truly matters...
         </p>
         <div className="cards-about flex justify-between w-full">
-          <div>Statement 1</div>
           <div>Statement 2</div>
+          <div>Statement 1</div>
           <div>Statement 3</div>
         </div>
       </div>
@@ -41,8 +42,6 @@ const About = () => {
           </p>
         </div>
         <div className="sec2-leaders carousel-about">
-          <SlArrowLeft  className="arrowleft"/>
-          <SlArrowRight className="arrowright"/>
           <CarouselAbout />
         </div>
       </div>
@@ -50,27 +49,37 @@ const About = () => {
       <div className="marquee-aboutPage pb-20">
         <p className="headerHero-about text-center pb-10">Strategic Partners</p>
         <div>
-        <Marquee pauseOnHover="true" direction="right" speed={100}>
-          <div className="marquee">
-            <img src={logo} />
-            <img src={logo} />
-            <img src={logo} />
-            <img src={logo} />
-          </div>
-        </Marquee>
-      </div>
+          <Marquee pauseOnHover="true" direction="right" speed={50}>
+            <div className="marquee">
+              <img src={logo} />
+              <img src={logo} />
+              <img src={logo} />
+              <img src={logo} />
+            </div>
+          </Marquee>
+        </div>
       </div>
 
       <div className="contact-about">
         <div className="sec1-contact">
           <p className="headerHero-about">Contact Us</p>
           <div className="contact-details">
-            <p><b>Phone: </b> xx xxxxxxxxxx</p>
-            <p><b>Address: </b> 1234, abcd, wxyz</p>
-            <p><b>E-Mail: </b> abcdefg@gmail.com</p>
+            <p>
+              <b>Phone: </b> xx xxxxxxxxxx
+            </p>
+            <p>
+              <b>Address: </b> 1234, abcd, wxyz
+            </p>
+            <p>
+              <b>E-Mail: </b> abcdefg@gmail.com
+            </p>
           </div>
           <div className="email-contactAbout">
-            <input type="email" placeholder="Type your email..." className=" pl-5"/>
+            <input
+              type="email"
+              placeholder="Type your email..."
+              className=" pl-5"
+            />
             <button>Contact</button>
           </div>
         </div>

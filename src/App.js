@@ -12,10 +12,10 @@ import Resources from "./pages/Resources";
 import About from "./pages/About";
 
 function App() {
-  useEffect(() => {
-    // 👇️ scroll to top on page load
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  }, []);
+  // useEffect(() => {
+  //   // 👇️ scroll to top on page load
+  //   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  // }, []);
 
   return (
     <>

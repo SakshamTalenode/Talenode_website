@@ -18,10 +18,14 @@ const Footer = () => {
             can focus on what truly matters...
           </p>
         </div>
+
         <div className="sec2-footer">
           <h3>Website Links</h3>
           <a href="/">
             <p>Home</p>
+          </a>
+          <a href="/Solutions">
+            <p>Solutions</p>
           </a>
           <a href="/Resources">
             <p>Resources</p>
@@ -33,27 +37,31 @@ const Footer = () => {
             <p>Contact Us</p>
           </a>
         </div>
+
         <div className="sec2-footer footer-hide-mobile">
           <a href="/Solutions">
-            <h3 className="text-center">Solutions</h3>
+            <h3 className="">Products</h3>
           </a>
-          <div className="flex flex-row gap-8 ">
-            <div>
-              {products.map((product) => (
-                <a href={`/products/${product.name}`}>
-                  <p>{product.name}</p>
-                </a>
-              ))}
-            </div>
-            <div>
-              {useCases.map((useCase) => (
-                <a href={`/useCases/${useCase.name}`}>
-                    <p>{useCase.name}</p>
-                </a>
-              ))}
-            </div>
-          </div>
+
+          {products.map((product) => (
+            <a href={`/products/${product.name}`}>
+              <p>{product.name}</p>
+            </a>
+          ))}
         </div>
+
+        <div className="sec2-footer footer-hide-mobile">
+          <a href="/Solutions">
+            <h3 className="">Use Cases</h3>
+          </a>
+
+          {useCases.map((useCase) => (
+            <a href={`/useCases/${useCase.name}`}>
+              <p>{useCase.name}</p>
+            </a>
+          ))}
+        </div>
+
         <div className="sec3-footer">
           <p>Get in Touch</p>
           <div className="footer-icons">

@@ -106,8 +106,8 @@ const Solutions = () => {
           <p className="headerUC-short text-center">Our Product vs Other Vendors</p>
           <p className="tagUC-short text-center">Talenode tackles the complexities of people analytics so that you can focus on what truly matters...</p>
         </div>
-        <div className='vs-main flex justify-between items-center'>
-          <div className="vs-left flex justify-between items-center">
+        <div className='vs-main flex flex-row-reverse justify-between items-center gap-5'>
+          <div className="vs-left flex justify-evenly items-center">
             <div className="talenodeVS flex flex-col gap-5">
               <p className="headingVS">Talenode</p>
               <div className="features-talenode flex flex-col gap-10">
@@ -125,9 +125,9 @@ const Solutions = () => {
               </div>
             </div>
           </div>
-          <div className="vs-right flex justify-between items-center flex-col gap-5">
+          <div className="vs-right flex justify-between items-center flex-col gap-10">
             {products.map((product) => (
-              <button onClick={() => setCurrBtn(product)}>
+              <button style={currBtn.name === product.name ? {background:"#9FD47C", color:"#404040", border:"5px solid #4A7C29"} : {background: "#4A7C29"}} onClick={() => setCurrBtn(product)}>
                 {product.name}
               </button>
             ))}

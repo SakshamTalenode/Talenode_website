@@ -31,7 +31,7 @@ const Navbar = () => {
   // useEffect(() => setDropbutton(false))
 
   return (
-    <div className="navbar">
+    <div className="navbar" onMouseLeave={() => setDropbutton(false)}>
       <Link
         className="nav-logo-container"
         onClick={() => {
@@ -156,10 +156,10 @@ const Navbar = () => {
                   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                 }}
                 to="/Solutions"
-                className="dropbtn flex items-center gap-2"
+                className="dropbtn dropbtn-solns flex items-center gap-2 "
               >
                 Solutions
-                <SlArrowDown className="down-button-hover" />
+                <SlArrowDown className="down-button-hover p-0" />
               </div>
               <div class={toggle ? "dropdown-content-mob" : "hidden"}>
                 <div className="dropdown-content-container-mob">

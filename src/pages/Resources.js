@@ -111,13 +111,13 @@ const Resources = (props) => {
       <div id="blogs" className="blogs-resources flex flex-col items-center gap-10">
         <p className="">Blog</p>
         <div className="blogCards flex justify-between items-center">
-          {/* <div className="blog1 flex justify-center items-center"> */}
-          <iframe src='https://widgets.sociablekit.com/rss-feed/iframe/25442973' frameborder='0' width='100%' height='90%'></iframe>
-          {/* </div> */}
-          {/* <div className="blog2-3 flex flex-col justify-between gap-5">
+          <div className="blog1 flex justify-center items-center">
+          {/* <iframe src='https://widgets.sociablekit.com/rss-feed/iframe/25442973' frameborder='0' width='90%' height='90%'></iframe> */}
+          </div>
+          <div className="blog2-3 flex flex-col justify-between gap-5">
             <div className="blog2 flex justify-center items-center">Blog 2</div>
             <div className="blog2 flex justify-center items-center">Blog 3</div>
-          </div> */}
+          </div>
         </div>
 
         <div id="whitepapers" className="other-articles flex justify-between gap-10">
