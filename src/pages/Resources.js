@@ -30,7 +30,7 @@ const Resources = (props) => {
 
   return (
     <div className="resourcesPage">
-      <div className="topics-resources flex justify-between">
+      {/* <div className="topics-resources flex justify-between">
         <button
           style={
             toggle === 1
@@ -74,14 +74,14 @@ const Resources = (props) => {
         >
           Topic 3
         </button>
-      </div>
+      </div> */}
 
-      <div id="case-studies" className="caseStudies-resources">
+      {/* <div id="case-studies" className="caseStudies-resources"> */}
         {/* <SlArrowLeft  className="arrowleft"/>
         <SlArrowRight className="arrowright"/> */}
-        <p className=" text-center">Case Studies</p>
-        <Carousel
-          className="carousel-CS"
+        {/* <p className=" text-center">Case Studies</p> */}
+        {/* <Carousel */}
+          {/* className="carousel-CS"
           swipeable={true}
           draggable={false}
           showDots={true}
@@ -97,16 +97,34 @@ const Resources = (props) => {
           removeArrowOnDeviceType={["tablet", "mobile"]}
           // deviceType={this.props.deviceType}
           // dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
-        >
-          <div>Case Study 1 <br/> (SWIPE -->)</div>
+          itemClass="carousel-item-padding-40-px" */}
+        {/* > */}
+          {/* <div>Case Study 1 <br/> (SWIPE -->)</div>
           <div>Case Study 2</div>
           <div>Case Study 3</div>
           <div>Case Study 4</div>
-          <div>Case Study 5</div>
+          <div>Case Study 5</div> */}
           
-        </Carousel>
+        {/* </Carousel> */}
+      {/* </div> */}
+
+      
+      <div id="blogs" className="blogs-resources flex flex-col items-center gap-10">
+        <p className="">Case Studies</p>
+        <div className="blogCards flex justify-between items-center">
+          <div className="blog2-3 flex flex-col justify-between gap-5">
+            <div className="blog2 flex justify-center items-center">Case Study 2</div>
+            <div className="blog2 flex justify-center items-center">Case Study 3</div>
+          </div>
+          
+          <div className="blog1 flex justify-center items-center">
+          {/* <iframe src='https://widgets.sociablekit.com/rss-feed/iframe/25442973' frameborder='0' width='90%' height='90%'></iframe> */}
+          </div>
+          
+        </div>
+        
       </div>
+
 
       <div id="blogs" className="blogs-resources flex flex-col items-center gap-10">
         <p className="">Blog</p>

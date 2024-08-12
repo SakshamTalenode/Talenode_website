@@ -99,7 +99,7 @@ const Home = () => {
           </Tilt>
         </div>
 
-        <div className="cards-home-sec2-mobile flex-wrap">
+        <div className="cards-home-sec2-mobile ">
           
             <div className="card-sec2">
               <svg
