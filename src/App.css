@@ -71,7 +71,7 @@ html {
   position: absolute;
   /* overflow: hidden; */
   width: auto;
-  min-width: 225px;
+  min-width: 150px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   /* margin-top: 5px; */
@@ -82,6 +82,7 @@ html {
   float: none;
   background-color: #404040;
   color: #f0f8ea;
+  font-size: 20px;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 20px;
@@ -132,8 +133,8 @@ html {
   background-color: #404040;
   font-weight: 600;
   color: #f0f8ea;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 5px 20px;
+  padding-bottom: 10px;
 }
 
 .drop-exception {
@@ -269,7 +270,7 @@ html {
     background-color: #404040;
     overflow: hidden;
     width: auto;
-    min-width: 160px;
+    min-width: 100px;
     /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
     z-index: 1;
   }
@@ -2166,9 +2167,15 @@ html {
   padding: 0;
 }
 
+.leader-hover{
+  border: 0px solid;
+}
+
 .leader-hover2:hover{
   border: 6px solid #4a7c29;
   border-radius: 100px;
+  opacity: 1;
+  transition: border ease-in 0.1s;
 }
 
 .carousel-about .img1 {
@@ -2194,6 +2201,7 @@ html {
 }
 
 .leader-hover{
+  scale: 1.2;
   object-fit: contain;
   width: 230px;
   border: 3px solid #4a7c29;

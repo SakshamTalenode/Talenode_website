@@ -182,7 +182,7 @@ const About = () => {
           <p className="tagHero-about text-center w-100">
             "{currleader.desc}"
           </p>
-          <p className="tagHero-about " ><b> - {currleader.name} </b> <br/> <i className="leader-comps">{currleader.comps}</i> </p>
+          <p className="tagHero-about " ><b> - {currleader.name} </b>, {currleader.designation} <br/> <i className="leader-comps">{currleader.comps}</i> </p>
         </div>
         <div className="sec2-leaders carousel-about">
           <button onClick={() => setCurrleader(leaders[0])} className="img1" >
