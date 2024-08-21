@@ -10,12 +10,17 @@ import UseCase from "./pages/UseCase";
 import Solutions from "./pages/Solutions";
 import Resources from "./pages/Resources";
 import About from "./pages/About";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import { useCookies } from "react-cookie";
+import CookieForm from "./components/CookieForm";
 
 function App() {
   // useEffect(() => {
   //   // 👇️ scroll to top on page load
   //   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   // }, []);
+
+  const [cookies] = useCookies(["cookieConsent"]);
 
   return (
     <>
@@ -36,13 +41,11 @@ function App() {
           />
         ))}
         <Route path="/Resources" element={<Resources />} />
-        
-        
         <Route path="/About" element={<About />} />
-
-
-        
+        <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
       </Routes>
+
+      {!cookies.cookieConsent && <CookieForm />}
       <Footer />
     </>
   );

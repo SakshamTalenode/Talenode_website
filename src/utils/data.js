@@ -1,5 +1,6 @@
 import datadrive from "../assets/DataDrive-hero.png"
 import datadriveimg from "../assets/landing-img.png";
+import leader from "../assets/leader.png";
 
 export const products = [
     {
@@ -224,5 +225,32 @@ export const useCases = [
         left: true,
     },
     
+
+]
+
+export const leaders = [
+    {
+        name: "Ankit Abrol",
+        designation: "Founder",
+        comps: "Deloite, IBM, AON",
+        img: leader,
+        desc: "Ankit Abrol brings over a decade of experience in data analytics, business intelligence, and strategic leadership. With a background in HRM from XLRI Ja",
+    },
+
+    {
+        name: "Raswinder Jit Singh",
+        designation: "Advisor",
+        comps: "Mercer, uknowva, unberry, inqubex",
+        img: leader,
+        desc: "Raswinder Jit Singh is a seasoned HR and talent management expert with a proven track record in driving organizational growth through strategic human capital initiatives. ",
+    },
+
+    {
+        name: "Nikhil",
+        designation: "Advisor",
+        comps: "Deloite, AON, BLA",
+        img: leader,
+        desc: "Raswinder Jit Singh is a seasoned HR and talent management expert with a proven track record in driving organizational growth through strategic human capital initiatives. ",
+    },
 
 ]

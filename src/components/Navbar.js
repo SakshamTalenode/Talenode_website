@@ -31,7 +31,7 @@ const Navbar = () => {
   // useEffect(() => setDropbutton(false))
 
   return (
-    <div className="navbar" onMouseLeave={() => setDropbutton(false)}>
+    <div className={scrolled ? "navbar shadownav" : "navbar"} onMouseLeave={() => setDropbutton(false)}>
       <Link
         className="nav-logo-container"
         onClick={() => {

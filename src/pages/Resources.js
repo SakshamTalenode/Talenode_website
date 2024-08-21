@@ -76,12 +76,12 @@ const Resources = (props) => {
         </button>
       </div> */}
 
-      {/* <div id="case-studies" className="caseStudies-resources"> */}
-        {/* <SlArrowLeft  className="arrowleft"/>
-        <SlArrowRight className="arrowright"/> */}
-        {/* <p className=" text-center">Case Studies</p> */}
-        {/* <Carousel */}
-          {/* className="carousel-CS"
+      <div id="case-studies" className="caseStudies-resources">
+        <SlArrowLeft  className="arrowleft"/>
+        <SlArrowRight className="arrowright"/>
+        <p className=" text-center">Case Studies</p>
+        <Carousel
+          className="carousel-CS"
           swipeable={true}
           draggable={false}
           showDots={true}
@@ -97,16 +97,16 @@ const Resources = (props) => {
           removeArrowOnDeviceType={["tablet", "mobile"]}
           // deviceType={this.props.deviceType}
           // dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px" */}
-        {/* > */}
-          {/* <div>Case Study 1 <br/> (SWIPE -->)</div>
+          itemClass="carousel-item-padding-40-px"
+        >
+          <div>Case Study 1 <br/> (SWIPE -->)</div>
           <div>Case Study 2</div>
           <div>Case Study 3</div>
           <div>Case Study 4</div>
-          <div>Case Study 5</div> */}
+          <div>Case Study 5</div>
           
-        {/* </Carousel> */}
-      {/* </div> */}
+        </Carousel>
+      </div>
 
       
       <div id="blogs" className="blogs-resources flex flex-col items-center gap-10">
