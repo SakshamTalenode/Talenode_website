@@ -262,10 +262,106 @@ export const products = [
 
 export const subProducts = [
   {
-    name: "Data Validator",
+    name: "Metrics Library",
     id: "one",
     checked: "checked",
-    headerLand: "Data Validator",
+    headerLand: "Metrics Library",
+    tagLand:
+      "Accurate, Complete and Timely (ACT) People Data, All the Time. \nAlways-ready people data for reporting, compliance and analysis with our intelligent validation tool.",
+    heroImg: datadrive,
+    challengeStatement: "The Challenge of Managing People Data",
+    challengeDesc:
+      "Organization data is dynamic and ever-evolving with every passing day. Old-school data management is slow and error-prone, leaving organizations stuck with messy data that’s far from ready for action.",
+    challengeImg: datadrive,
+    header2:
+      "Meet Data Validator - Your Solution for Clean, Validated People Data",
+    tag2: "Data Validator is your go-to for clean, actionable people data. It pulls in data and runs it through smart, pre-built rulesets, to instantly flag errors. You can fix issues on the spot, add exceptions, and even create new rules, ensuring your data is always accurate and ready to roll.",
+    productFeatures: [
+      {
+        name: "Automated Data Ingestion",
+        toggle: true,
+        desc: "Collects data from your HR system seamlessly Highlights errors and guides you through the correction process.",
+        demoLink: "https://sakshamsehgal.com",
+        img: datadriveimg,
+      },
+      {
+        name: "Pre-Defined Rulesets",
+        toggle: false,
+        desc: "Validates data against a comprehensive set of 80+ rules designed to catch all types of errors.",
+        demoLink: "",
+        img: datadriveimg,
+      },
+      {
+        name: "Error Identification & Correction",
+        toggle: true,
+        desc: "Highlights errors and guides you through the correction process.",
+        demoLink: "",
+        img: datadriveimg,
+      },
+      {
+        name: "Adaptive Learning System",
+        toggle: false,
+        desc: "Adapts and improves with each validation cycle by incorporating new rules and exceptions.",
+        demoLink: "",
+        img: datadriveimg,
+      },
+      {
+        name: "Downloadable Clean Data",
+        toggle: true,
+        desc: "After validation, download the updated, error-free data for further reporting, analysis, visualization.",
+        demoLink: "",
+        img: datadriveimg,
+      },
+    ],
+
+    headerHow: "How Data Validator Works",
+    stepsHow: [
+      "Data Scraping - Data Validator scrapes people data from your HR system",
+      "Initial Validation - Runs data through pre-defined rulesets to identify errors.",
+      "Correction & Learning - Prompts you to correct errors, add exceptions, and create new rules.",
+      "Ongoing Improvement - Each validation cycle updates the rulesets, learning from your input.",
+      "Data Export - Download the validated, clean data for use in reporting, analysis, visualization, and analytics.",
+    ],
+    howImg: datadriveimg,
+    benefitsHead: "Why Choose Data Validator?",
+    benefits: {
+      head: [
+        "Actionable Data :",
+        "Trust in Data :",
+        "Time and Resource Efficiency :",
+        "Your Personal Data Guardian :",
+      ],
+      desc: [
+        "Get your hands on Accurate, Complete, Timely (ACT) Data always",
+        "Make better organization decisions with reliable, validated data.",
+        "Reduce manual, error-prone data cleaning.",
+        "Adapt the tool to your organization realities with custom rulesets",
+      ],
+    },
+    benefitsImg: datadriveimg,
+    demo: "",
+    this: "diff",
+
+    headerShort: "Accurate, (ACT) Data, All the Time",
+    tagShort:
+      "Always-ready people data for reporting, compliance and analysis with our intelligent validation tool",
+    features: [
+      "Automated Data Ingestion",
+      "Pre-Defined Rulesets",
+      "Error Identification & Correction",
+      "Adaptive Learning System",
+    ],
+    imgShort: datadriveimg,
+
+    featureVS: ["Automated Data Ingestion", "Pre-Defined Rulesets", "Error Identification & Correction", "Adaptive Learning System"],
+    vendorVS: ["Feature 1", "Feature 2", "Feature 3", "Feature 4"],
+  },
+
+  {
+    name: "DashView",
+    id: "one",
+    checked: "checked",
+    headerLand: "DashView",
     tagLand:
       "Accurate, Complete and Timely (ACT) People Data, All the Time. \nAlways-ready people data for reporting, compliance and analysis with our intelligent validation tool.",
     heroImg: datadrive,
