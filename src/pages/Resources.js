@@ -76,7 +76,7 @@ const Resources = (props) => {
         </button>
       </div> */}
 
-      <div id="case-studies" className="caseStudies-resources">
+      {/* <div id="case-studies" className="caseStudies-resources">
         <SlArrowLeft  className="arrowleft"/>
         <SlArrowRight className="arrowright"/>
         <p className=" text-center">Case Studies</p>
@@ -106,7 +106,7 @@ const Resources = (props) => {
           <div>Case Study 5</div>
           
         </Carousel>
-      </div>
+      </div> */}
 
       
       <div id="blogs" className="blogs-resources flex flex-col items-center gap-10">

@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import { Routes, Route } from "react-router-dom";
-import { products, useCases } from "./utils/data";
+import { products, subProducts, useCases } from "./utils/data";
 import Product from "./pages/Product";
 import UseCase from "./pages/UseCase";
 import Solutions from "./pages/Solutions";
@@ -13,6 +13,7 @@ import About from "./pages/About";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import { useCookies } from "react-cookie";
 import CookieForm from "./components/CookieForm";
+import DataSight from "./pages/subProducts/DataSight";
 
 function App() {
   // useEffect(() => {
@@ -33,6 +34,9 @@ function App() {
             path={`/products/${product.name}`}
             element={<Product prop={product} />}
           />
+        ))}
+        {subProducts.map((subProduct) => (
+          <Route path={`/products/DataSight/${subProduct.name}`} element={<DataSight prop={subProduct} />}/>
         ))}
         {useCases.map((useCase) => (
           <Route

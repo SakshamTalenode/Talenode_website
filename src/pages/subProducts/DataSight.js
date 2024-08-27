@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React from 'react'
 
-const Product = ({ prop }) => {
+const DataSight = ({prop}) => {
   return (
-    <div className="productPage">
+    <div>
+      <div className="productPage">
       <div className="hero-product">
         <p className="header-heroProduct">{prop.headerLand}</p>
         <p className="tagline-heroProduct">{prop.tagLand}</p>
@@ -32,7 +33,7 @@ const Product = ({ prop }) => {
                 <p className="head-feature">{feature.name}</p>
                 <p className="desc-feature">{feature.desc}</p>
               </div>
-              <a href={`/products/DataSight/${feature.name}`}><button>Learn More</button></a>
+              <button>Learn More</button>
             </div>
 
             <img src={feature.img} />
@@ -76,7 +77,8 @@ const Product = ({ prop }) => {
         <button>Demo</button>
       </div>
     </div>
-  );
-};
+    </div>
+  )
+}
 
-export default Product;
+export default DataSight;
