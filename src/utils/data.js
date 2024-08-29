@@ -263,82 +263,30 @@ export const products = [
 export const subProducts = [
   {
     name: "Metrics Library",
-    id: "one",
-    checked: "checked",
     headerLand: "Metrics Library",
     tagLand:
-      "Accurate, Complete and Timely (ACT) People Data, All the Time. \nAlways-ready people data for reporting, compliance and analysis with our intelligent validation tool.",
+      "Laying a Strong Foundation for Data-Driven Decisions",
     heroImg: datadrive,
-    challengeStatement: "The Challenge of Managing People Data",
-    challengeDesc:
-      "Organization data is dynamic and ever-evolving with every passing day. Old-school data management is slow and error-prone, leaving organizations stuck with messy data that’s far from ready for action.",
-    challengeImg: datadrive,
     header2:
-      "Meet Data Validator - Your Solution for Clean, Validated People Data",
-    tag2: "Data Validator is your go-to for clean, actionable people data. It pulls in data and runs it through smart, pre-built rulesets, to instantly flag errors. You can fix issues on the spot, add exceptions, and even create new rules, ensuring your data is always accurate and ready to roll.",
+      "Metrics Library",
+    tag2: "Effective reporting and analytics start with the right metrics. Our Metrics Library offers a selection of 250+ leading and lagging metrics across various industries and talent functions. We provide expert guidance to help you identify the most relevant metrics based on your industry, decision-making needs, function, and maturity level.",
     productFeatures: [
       {
-        name: "Automated Data Ingestion",
+        name: "Curated Metrics",
         toggle: true,
-        desc: "Collects data from your HR system seamlessly Highlights errors and guides you through the correction process.",
+        desc: "Access a comprehensive library of 250+ metrics tailored to your industry and organization realities.",
         demoLink: "https://sakshamsehgal.com",
         img: datadriveimg,
       },
       {
-        name: "Pre-Defined Rulesets",
+        name: "Expert Advisory",
         toggle: false,
-        desc: "Validates data against a comprehensive set of 80+ rules designed to catch all types of errors.",
-        demoLink: "",
-        img: datadriveimg,
-      },
-      {
-        name: "Error Identification & Correction",
-        toggle: true,
-        desc: "Highlights errors and guides you through the correction process.",
-        demoLink: "",
-        img: datadriveimg,
-      },
-      {
-        name: "Adaptive Learning System",
-        toggle: false,
-        desc: "Adapts and improves with each validation cycle by incorporating new rules and exceptions.",
-        demoLink: "",
-        img: datadriveimg,
-      },
-      {
-        name: "Downloadable Clean Data",
-        toggle: true,
-        desc: "After validation, download the updated, error-free data for further reporting, analysis, visualization.",
+        desc: "Receive personalized advice on which metrics to track to drive impactful decisions.",
         demoLink: "",
         img: datadriveimg,
       },
     ],
 
-    headerHow: "How Data Validator Works",
-    stepsHow: [
-      "Data Scraping - Data Validator scrapes people data from your HR system",
-      "Initial Validation - Runs data through pre-defined rulesets to identify errors.",
-      "Correction & Learning - Prompts you to correct errors, add exceptions, and create new rules.",
-      "Ongoing Improvement - Each validation cycle updates the rulesets, learning from your input.",
-      "Data Export - Download the validated, clean data for use in reporting, analysis, visualization, and analytics.",
-    ],
-    howImg: datadriveimg,
-    benefitsHead: "Why Choose Data Validator?",
-    benefits: {
-      head: [
-        "Actionable Data :",
-        "Trust in Data :",
-        "Time and Resource Efficiency :",
-        "Your Personal Data Guardian :",
-      ],
-      desc: [
-        "Get your hands on Accurate, Complete, Timely (ACT) Data always",
-        "Make better organization decisions with reliable, validated data.",
-        "Reduce manual, error-prone data cleaning.",
-        "Adapt the tool to your organization realities with custom rulesets",
-      ],
-    },
-    benefitsImg: datadriveimg,
     demo: "",
     this: "diff",
 
@@ -352,89 +300,34 @@ export const subProducts = [
       "Adaptive Learning System",
     ],
     imgShort: datadriveimg,
-
-    featureVS: ["Automated Data Ingestion", "Pre-Defined Rulesets", "Error Identification & Correction", "Adaptive Learning System"],
-    vendorVS: ["Feature 1", "Feature 2", "Feature 3", "Feature 4"],
   },
 
   {
     name: "DashView",
-    id: "one",
-    checked: "checked",
-    headerLand: "DashView",
+    headerLand: "Dash View",
     tagLand:
-      "Accurate, Complete and Timely (ACT) People Data, All the Time. \nAlways-ready people data for reporting, compliance and analysis with our intelligent validation tool.",
+      "Metrics that Chatter",
     heroImg: datadrive,
-    challengeStatement: "The Challenge of Managing People Data",
-    challengeDesc:
-      "Organization data is dynamic and ever-evolving with every passing day. Old-school data management is slow and error-prone, leaving organizations stuck with messy data that’s far from ready for action.",
-    challengeImg: datadrive,
     header2:
-      "Meet Data Validator - Your Solution for Clean, Validated People Data",
-    tag2: "Data Validator is your go-to for clean, actionable people data. It pulls in data and runs it through smart, pre-built rulesets, to instantly flag errors. You can fix issues on the spot, add exceptions, and even create new rules, ensuring your data is always accurate and ready to roll.",
+      "Dash View",
+    tag2: "Once your metrics are defined, we bring them to life through intuitive, narrative-driven dashboards on platforms like Power BI, Tableau, and Qlik. These aren’t your typical dashboards—our solutions are designed to reveal the insights that matter, enabling every member of your organization to take informed, timely actions.",
     productFeatures: [
       {
-        name: "Automated Data Ingestion",
+        name: "Intuitive Dashboards",
         toggle: true,
-        desc: "Collects data from your HR system seamlessly Highlights errors and guides you through the correction process.",
+        desc: "Create user-friendly dashboards that everyone in your organization can leverage, regardless of technical skill.",
         demoLink: "https://sakshamsehgal.com",
         img: datadriveimg,
       },
       {
-        name: "Pre-Defined Rulesets",
+        name: "Compelling Narratives",
         toggle: false,
-        desc: "Validates data against a comprehensive set of 80+ rules designed to catch all types of errors.",
-        demoLink: "",
-        img: datadriveimg,
-      },
-      {
-        name: "Error Identification & Correction",
-        toggle: true,
-        desc: "Highlights errors and guides you through the correction process.",
-        demoLink: "",
-        img: datadriveimg,
-      },
-      {
-        name: "Adaptive Learning System",
-        toggle: false,
-        desc: "Adapts and improves with each validation cycle by incorporating new rules and exceptions.",
-        demoLink: "",
-        img: datadriveimg,
-      },
-      {
-        name: "Downloadable Clean Data",
-        toggle: true,
-        desc: "After validation, download the updated, error-free data for further reporting, analysis, visualization.",
+        desc: "Craft dashboards that not only present data but also tell a story, guiding leaders to take decisive actions.",
         demoLink: "",
         img: datadriveimg,
       },
     ],
 
-    headerHow: "How Data Validator Works",
-    stepsHow: [
-      "Data Scraping - Data Validator scrapes people data from your HR system",
-      "Initial Validation - Runs data through pre-defined rulesets to identify errors.",
-      "Correction & Learning - Prompts you to correct errors, add exceptions, and create new rules.",
-      "Ongoing Improvement - Each validation cycle updates the rulesets, learning from your input.",
-      "Data Export - Download the validated, clean data for use in reporting, analysis, visualization, and analytics.",
-    ],
-    howImg: datadriveimg,
-    benefitsHead: "Why Choose Data Validator?",
-    benefits: {
-      head: [
-        "Actionable Data :",
-        "Trust in Data :",
-        "Time and Resource Efficiency :",
-        "Your Personal Data Guardian :",
-      ],
-      desc: [
-        "Get your hands on Accurate, Complete, Timely (ACT) Data always",
-        "Make better organization decisions with reliable, validated data.",
-        "Reduce manual, error-prone data cleaning.",
-        "Adapt the tool to your organization realities with custom rulesets",
-      ],
-    },
-    benefitsImg: datadriveimg,
     demo: "",
     this: "diff",
 
@@ -448,9 +341,6 @@ export const subProducts = [
       "Adaptive Learning System",
     ],
     imgShort: datadriveimg,
-
-    featureVS: ["Automated Data Ingestion", "Pre-Defined Rulesets", "Error Identification & Correction", "Adaptive Learning System"],
-    vendorVS: ["Feature 1", "Feature 2", "Feature 3", "Feature 4"],
   },
 ];
 

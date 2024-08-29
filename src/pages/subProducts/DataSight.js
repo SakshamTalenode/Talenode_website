@@ -10,12 +10,6 @@ const DataSight = ({prop}) => {
         <img src={prop.heroImg} />
       </div>
 
-      <div className="hero-product">
-        <p className="header-heroProduct">{prop.challengeStatement}</p>
-        <p className="tagline-heroProduct">{prop.challengeDesc}</p>
-        <img src={prop.challengeImg} />
-      </div>
-
       <div className="sec2-product">
         <div className="product-solution">
           <p className="header-heroProduct">{prop.header2}</p>
@@ -39,34 +33,6 @@ const DataSight = ({prop}) => {
             <img src={feature.img} />
           </div>
         ))}
-      </div>
-
-      <div className="howItWorks-product">
-        <div>
-          <p className="header-how">{prop.headerHow}</p>
-
-          <div>
-            {prop.stepsHow.map((step, index) => (
-              <p className="steps-how"> <b>Step {index+1}:</b> {step}</p>
-            ))}
-          </div>
-        </div>
-
-        <img src={prop.howImg} />
-      </div>
-
-      <div className="benefits-product">
-        <div>
-          <p className="header-how">{prop.benefitsHead}</p>
-
-          <div>
-            {prop.benefits.head.map((benefit, index) => (
-              <p className="steps-how"><b>{benefit}</b> {prop.benefits.desc[index]}</p>
-            ))}
-          </div>
-        </div>
-
-        <img src={prop.benefitsImg} />
       </div>
 
       <div className="sec3-product">
