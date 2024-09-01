@@ -50,11 +50,12 @@ const Home = () => {
 
       <div className="home-sec2">
         <p className="header-sec2">
-          Building a Valuable, Forward-Thinking Talent Organization.
+          The Talenode Advantage
         </p>
         <p className="tagline-sec2">
           Talenode tackles the complexities of people analytics so that you can
-          focus on what truly matters...
+          focus on what truly matters...<br/>
+          Building a Valuable, Forward-Thinking Talent Organization.
         </p>
         <div className="cards-home-sec2 flex-wrap">
           <Tilt>
@@ -186,7 +187,7 @@ const Home = () => {
       </div>
 
       <div className="challenges-homePage">
-        <p className="headerChallenges-home">Solve Big Work-force Challenges</p>
+        <p className="headerChallenges-home">Challenges We Solve</p>
 
         <div className="buttSec-home">
           <div className="buttons-buttSec">
@@ -227,7 +228,7 @@ const Home = () => {
 
       <div className="products-home">
         <div className="product-solution">
-          <p className="header-heroProduct">Products</p>
+          <p className="header-heroProduct">Our suite of Offerings</p>
           <p className="tagline-heroProduct" style={{ padding: "0" }}>
             Talenode aims to take the burning people analytics challenges head
             on.
@@ -302,7 +303,7 @@ const Home = () => {
               type="text"
               placeholder="Enter your email..."
             /> */}
-            <button className="btn-actionCard">Action Button</button>
+            <button className="btn-actionCard">Speak With Us</button>
           </div>
         </div>
       </div>
