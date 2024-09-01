@@ -666,13 +666,13 @@ html {
   padding-right: 9vw;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 100px;
 }
 
 .sub-card {
-  width: 70vw;
+  width: 39vw;
   border-radius: 80px;
   background-color: #fff;
   box-shadow: 0px 4px 12px 0px rgba(159, 212, 124, 0.5);
@@ -695,10 +695,11 @@ html {
   background-color: #fff;
   color: var(--sub-heading, #404040);
   font-family: Poppins;
-  font-size: 40px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  text-align: center;
 }
 
 .email-subCard {
@@ -713,13 +714,13 @@ html {
 
 .input-subCard {
   width: 900px;
-  height: 80px;
+  height: 60px;
   border: 5px solid #4a7c29;
   border-radius: 10px;
   background: #fff;
   color: var(--sub-heading, #404040);
   font-family: Poppins;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -732,7 +733,7 @@ html {
   align-items: center;
   width: 261.852px;
   background-color: #4a7c29;
-  height: 80px;
+  height: 60px;
   border-top-right-radius: 10px 10px;
   border-bottom-right-radius: 10px 10px;
   margin-left: -10px;
@@ -740,7 +741,26 @@ html {
   color: #f0f8ea;
   text-align: center;
   font-family: Poppins;
-  font-size: 20px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.btn-actionCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 261.852px;
+  background-color: #4a7c29;
+  height: 60px;
+  border-radius: 10px;
+  margin-left: -10px;
+
+  color: #f0f8ea;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
