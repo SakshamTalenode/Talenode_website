@@ -11,6 +11,8 @@ export const products = [
     tagLand:
       "Accurate, Complete and Timely (ACT) People Data, All the Time. \nAlways-ready people data for reporting, compliance and analysis with our intelligent validation tool.",
     heroImg: datadrive,
+    tagHome: "Accurate, Complete and Timely (ACT) People Data, All the Time. Always-ready people data for reporting, compliance and analysis",
+    imgHome: datadriveimg,
     challengeStatement: "The Challenge of Managing People Data",
     challengeDesc:
       "Organization data is dynamic and ever-evolving with every passing day. Old-school data management is slow and error-prone, leaving organizations stuck with messy data that’s far from ready for action.",
@@ -97,6 +99,7 @@ export const products = [
 
     featureVS: ["Automated Data Ingestion", "Pre-Defined Rulesets", "Error Identification & Correction", "Adaptive Learning System"],
     vendorVS: ["Feature 1", "Feature 2", "Feature 3", "Feature 4"],
+    toggle: true,
   },
 
   {
@@ -107,6 +110,8 @@ export const products = [
     tagLand:
       "Transforming Data into Strategic Advantage. Fuel your organization with curated metrics and insightful dashboards to drive intelligent, data-driven decisions",
     heroImg: datadrive,
+    tagHome: "Choose from our Metrics Library as per your organization realities. Insightful dashboards that Transform Data into Strategic Advantage.",
+    imgHome: datadriveimg,
     challengeStatement: "The Challenges of Making Data-Driven Decisions",
     challengeDesc:
       "In today's fast-paced business environment, making the right decision is crucial. The sheer volume of data, coupled with the complexity of choosing the right metrics and making sense of them, can lead to missed opportunities and inefficiencies.",
@@ -169,6 +174,7 @@ export const products = [
 
     featureVS: ["Strategic Alignment", "Enhanced Decision-Making", "User-Friendly Design", "Proactive Response"],
     vendorVS: ["Feature 1", "Feature 2", "Feature 3", "Feature 4"],
+    toggle: false,
   },
 
   {
@@ -179,6 +185,8 @@ export const products = [
     tagLand:
       "Stay Ahead with proactive actions. Tired of cluttered dashboard and reactive decisions. Let Nudge keep you ahead of the game by guiding you to take timely actions to address key organization challenges.",
     heroImg: datadrive,
+    tagHome: "Stay Ahead of the Curve with Bold, Data-Led Moves. Take actions when you need to",
+    imgHome: datadriveimg,
     challengeStatement: "The Problem with Traditional Dashboards",
     challengeDesc:
       "Most companies rely on dashboards to monitor key metrics, but this approach has limitations. Dashboards only show a limited set of metrics that organizations think they should track. Their real estate constraints and reliance on user expertise often lead to missed insights. Moreover, dashboards can’t provide a clear narrative, and by the time they’re ready, actions are reactive rather than proactive.",
@@ -257,6 +265,7 @@ export const products = [
 
     featureVS: ["Automated Data Ingestion", "Pre-Defined Rulesets", "Error Identification & Correction", "Adaptive Learning System"],
     vendorVS: ["Feature 1", "Feature 2", "Feature 3", "Feature 4"],
+    toggle: true,
   },
 ];
 

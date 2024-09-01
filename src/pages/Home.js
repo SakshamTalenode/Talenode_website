@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import landIcon from "../assets/landing-img.png";
 import SubscribeCard from "../components/SubscribeCard";
 import logo from "../assets/nav-logo.png";
+import {products} from "../utils/data";
 import Marquee from "react-fast-marquee";
 import Tilt from "react-parallax-tilt";
 import challengeImg from "../assets/landing-img.png";
@@ -45,28 +46,6 @@ const Home = () => {
           <img src={landIcon} />
         </div>
       </div>
-
-      <div className="challenges-homePage">
-        <p className="headerChallenges-home">
-          Solve Big Work-force Challenges
-        </p>
-
-        <div className="buttSec-home">
-          <div className="buttons-buttSec">
-            <button className={currContent === 1 ? "highButt" : ""} onClick={() => setCurrContent(1)}>Inaccurate Data</button>
-            <button className={currContent === 2 ? "highButt" : ""} onClick={() => setCurrContent(2)}>Lagging Metrics</button>
-            <button className={currContent === 3 ? "highButt" : ""} onClick={() => setCurrContent(3)}>Ineffective Visualisations</button>
-            <button className={currContent === 4 ? "highButt" : ""} onClick={() => setCurrContent(4)}>Lack of Data-Led Actioning</button>
-          </div>
-          <div className="content-buttSec">
-            <div>
-              <p className="header-buttSec">{head}</p>
-              <p className="tagline-buttSec">{content}</p>
-            </div>
-            <img src={img} />
-          </div>
-        </div>
-      </div>
       
       <div className="home-sec2">
         <p className="header-sec2">
@@ -79,6 +58,7 @@ const Home = () => {
         <div className="cards-home-sec2 flex-wrap">
           <Tilt>
             <div className="card-sec2">
+              
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="115"
@@ -91,9 +71,9 @@ const Home = () => {
                   fill="#4A7C29"
                 />
               </svg>
-              <p className="header-card">People Analytics</p>
+              <p className="header-card">Start-to-End People Analytics</p>
               <p className="tagline-card">
-                We prioritize data accuracy and unification.
+              Unified, clean data to derive actionable insights for decision makers to proactively respond.
               </p>
             </div>
           </Tilt>
@@ -112,9 +92,9 @@ const Home = () => {
                   fill="#4A7C29"
                 />
               </svg>
-              <p className="header-card">The Perfect Synergy</p>
+              <p className="header-card">Perfect Synergy of Advisory</p>
               <p className="tagline-card">
-                Expertise of 'People' with efficiency and precision.
+              Combine the expertise of 'People' with the effectiveness of 'Technology' to deliver robust people analytics solutions 
               </p>
             </div>
           </Tilt>
@@ -133,9 +113,9 @@ const Home = () => {
                   fill="#4A7C29"
                 />
               </svg>
-              <p className="header-card">Our Effort, Your ROI</p>
+              <p className="header-card">Maximize Your Analytics ROI</p>
               <p className="tagline-card">
-                Building a strong data-led foundation.
+              We take on the intensive work of building a strong data-led foundation, ensuring you focus your efforts on problem solving, thereby deriving maximum value from people analytics.
               </p>
             </div>
           </Tilt>
@@ -203,7 +183,54 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="home-sec2 home-sec3">
+      <div className="challenges-homePage">
+        <p className="headerChallenges-home">
+          Solve Big Work-force Challenges
+        </p>
+
+        <div className="buttSec-home">
+          <div className="buttons-buttSec">
+            <button className={currContent === 1 ? "highButt" : ""} onClick={() => setCurrContent(1)}>Inaccurate Data</button>
+            <button className={currContent === 2 ? "highButt" : ""} onClick={() => setCurrContent(2)}>Lagging Metrics</button>
+            <button className={currContent === 3 ? "highButt" : ""} onClick={() => setCurrContent(3)}>Ineffective Visualisations</button>
+            <button className={currContent === 4 ? "highButt" : ""} onClick={() => setCurrContent(4)}>Lack of Data-Led Actioning</button>
+          </div>
+          <div className="content-buttSec">
+            <div>
+              <p className="header-buttSec">{head}</p>
+              <p className="tagline-buttSec">{content}</p>
+            </div>
+            <img src={img} />
+          </div>
+        </div>
+      </div>
+
+      <div className="products-home">
+        <div className="product-solution">
+          <p className="header-heroProduct">Products</p>
+          <p className="tagline-heroProduct" style={{ padding: "0" }}>
+          Talenode aims to take the burning people analytics challenges head on.
+          </p>
+        </div>
+
+        {products.map((product) => (
+          <div
+            className={product.toggle ? "product-feature" : "reverse-product"}
+          >
+            <div className="feature-sec1">
+              <div>
+                <p className="head-feature">{product.name}</p>
+                <p className="desc-feature">{product.tagHome}</p>
+              </div>
+              <a href={`/products/${product.name}`}><button>Learn More</button></a>
+            </div>
+
+            <img src={product.imgHome} />
+          </div>
+        ))}
+      </div>
+
+      {/* <div className="home-sec2 home-sec3">
         <p className="header-sec2 header-sec3">
           People Analytics Journey Comes With It's Challenges
         </p>
@@ -227,7 +254,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="carousel-home">
         <Marquee pauseOnHover="true" direction="right" speed={50}>

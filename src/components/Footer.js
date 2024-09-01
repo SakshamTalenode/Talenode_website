@@ -14,8 +14,7 @@ const Footer = () => {
             <img src={logo} />
           </a>
           <p>
-            Talenode tackles the complexities of people analytics so that you
-            can focus on what truly matters...
+            You Nurture Talent, We Nurture Data
           </p>
         </div>
 
