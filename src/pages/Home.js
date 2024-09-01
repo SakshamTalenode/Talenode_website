@@ -1,22 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import landIcon from "../assets/landing-img.png";
 import SubscribeCard from "../components/SubscribeCard";
 import logo from "../assets/nav-logo.png";
 import Marquee from "react-fast-marquee";
 import Tilt from "react-parallax-tilt";
+import challengeImg from "../assets/landing-img.png";
 
 const Home = () => {
+
+  const [currContent, setCurrContent] = useState(1);
+  let content;
+  let head;
+  let img = challengeImg;
+  if(currContent === 1){
+    head = "Inaccurate, Soiled People Data";
+    content = "Spend inordinate resources in stitching and cleaning data, yet end up with bad data yielding flawed insights";
+  }else if(currContent === 2){
+    head = "Track Metrics that are feasible";
+    content = "With incomplete data, foundational, lagging metrics get prioritized that do not uncover the real insights";
+  }else if(currContent === 3){
+    head = "Ineffective Visualizations";
+    content = "Most visualizations are costly real estate, hence, the challenge of fitting in the relevant information for relevant decision makers";
+  }else if(currContent === 4){
+    head = "Lack of Data-Led Actioning";
+    content = "Decision makers struggle to make sense of self-service dashboards, thereby leading to intertia and gut-based actioning";
+  }
+
   return (
     <div className="homePage">
       <div className="hero">
         <div className="hero-sec1">
           <div className="flex flex-col gap-4">
             <p className="header-hero">
-              Building a Valuable, Forward-Thinking Talent Organization.
+              You Nurture Talent, We Nurture Data
             </p>
             <p className="tagline-hero">
-              Talenode tackles the complexities of people analytics so that you
-              can focus on what truly matters...
+            Talenode guides organizations to look beyond the bend, so they can
+            build a forward-thinking talent organization
             </p>
           </div>
           <button className="hero-button">Speak with us</button>
@@ -26,6 +46,28 @@ const Home = () => {
         </div>
       </div>
 
+      <div className="challenges-homePage">
+        <p className="headerChallenges-home">
+          Solve Big Work-force Challenges
+        </p>
+
+        <div className="buttSec-home">
+          <div className="buttons-buttSec">
+            <button className={currContent === 1 ? "highButt" : ""} onClick={() => setCurrContent(1)}>Inaccurate Data</button>
+            <button className={currContent === 2 ? "highButt" : ""} onClick={() => setCurrContent(2)}>Lagging Metrics</button>
+            <button className={currContent === 3 ? "highButt" : ""} onClick={() => setCurrContent(3)}>Ineffective Visualisations</button>
+            <button className={currContent === 4 ? "highButt" : ""} onClick={() => setCurrContent(4)}>Lack of Data-Led Actioning</button>
+          </div>
+          <div className="content-buttSec">
+            <div>
+              <p className="header-buttSec">{head}</p>
+              <p className="tagline-buttSec">{content}</p>
+            </div>
+            <img src={img} />
+          </div>
+        </div>
+      </div>
+      
       <div className="home-sec2">
         <p className="header-sec2">
           Building a Valuable, Forward-Thinking Talent Organization.

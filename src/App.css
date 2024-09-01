@@ -331,9 +331,9 @@ html {
 }
 
 .header-hero {
-  width: 600px;
+  width: 500px;
   color: var(--sub-heading, #404040);
-  font-size: 40px;
+  font-size: 45px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -380,6 +380,103 @@ html {
   object-fit: contain;
 }
 
+/* CHALLENGES */
+
+.challenges-homePage{
+  padding: 0px 9vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.headerChallenges-home{
+  color: var(--sub-heading, #404040);
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.buttSec-home{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 25px 25px;
+  border-radius: 10px;
+  border: #9fd47c 2px solid;
+  box-shadow: 0px 0px 10px 0px #9fd47c;
+  /* background-color: #9fd47c; */
+  /* box-shadow: #9fd47c 0px 0px 0px 10px inset; */
+}
+
+.buttons-buttSec{
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons-buttSec button{
+  padding: 15px 15px;
+  font-family: Poppins, 'sans-serif';
+  font-size: 18px;
+  color: var(--sub-heading, #404040);
+  font-weight: 500;
+  border: #9fd47c 2px solid;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #9fd47c; */
+}
+
+.buttons-buttSec button:hover{
+  background-color: #4a7c29;
+  color: #f0f8ea;
+  transition: color 500ms;
+  transition: background-color 500ms;
+}
+
+.buttSec-home .highButt{
+  background-color: #4a7c29;
+  color: #f0f8ea;
+}
+
+.content-buttSec{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  /* align-items: center; */
+}
+
+.header-buttSec{
+  padding: 30px 0px;
+  color: var(--sub-heading, #404040);
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.tagline-buttSec{
+  color: var(--sub-heading, #404040);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.content-buttSec img{
+  object-fit: contain;
+  width: 300px;
+}
+
+
 /* SEC-2 */
 
 .home-sec2 {
@@ -404,7 +501,7 @@ html {
 }
 
 .tagline-sec2 {
-  width: 550px;
+  width: 750px;
   color: var(--sub-heading, #404040);
   text-align: center;
   font-family: Poppins;
@@ -2166,7 +2263,7 @@ html {
 .headerHero-about {
   color: var(--sub-heading, #404040);
   font-family: Poppins;
-  font-size: 50px;
+  font-size: 45px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
