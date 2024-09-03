@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Product = ({ prop }) => {
+  const [currBtn, setCurrBtn] = useState(prop.productFeatures[0]);
+  const [currIndex, setCurrIndex] = useState(0);
+
   return (
     <div className="productPage">
       <div className="hero-product">
@@ -15,7 +18,7 @@ const Product = ({ prop }) => {
         <img src={prop.challengeImg} />
       </div>
 
-      <div className="sec2-product">
+      {/* <div className="sec2-product">
         <div className="product-solution">
           <p className="header-heroProduct">{prop.header2}</p>
           <p className="tagline-heroProduct" style={{ padding: "0" }}>
@@ -32,15 +35,45 @@ const Product = ({ prop }) => {
                 <p className="head-feature">{feature.name}</p>
                 <p className="desc-feature">{feature.desc}</p>
               </div>
-              <a href={`/products/DataSight/${feature.name}`}><button>Learn More</button></a>
+              <a href={feature.demoLink}><button>Learn More</button></a>
             </div>
 
             <img src={feature.img} />
           </div>
         ))}
+      </div> */}
+
+      <div className="features-product">
+        <p className="headerChallenges-home text-center pb-7">{prop.header2}</p>
+
+        <div className="buttSec-Product">
+          <div className="buttons-buttSec">
+            {prop.productFeatures.map((feature, index) => (
+              <button
+                className={index === currIndex ? "highButt" : ""}
+                onClick={() => {
+                  setCurrBtn(feature);
+                  setCurrIndex(index);
+                }}
+              >
+                {feature.name}
+              </button>
+            ))}
+          </div>
+          <div className="content-buttSec">
+            <div>
+              <p className="header-buttSec">{currBtn.name}</p>
+              <p className="tagline-buttSec">{currBtn.desc}</p>
+              <a href={currBtn.demoLink}>
+                <button>Learn More</button>
+              </a>
+            </div>
+            <img src={currBtn.img} />
+          </div>
+        </div>
       </div>
 
-      <div className="howItWorks-product">
+      {/* <div className="howItWorks-product">
         <div>
           <p className="header-how">{prop.headerHow}</p>
 
@@ -52,7 +85,7 @@ const Product = ({ prop }) => {
         </div>
 
         <img src={prop.howImg} />
-      </div>
+      </div> */}
 
       <div className="benefits-product">
         <div>
@@ -60,7 +93,9 @@ const Product = ({ prop }) => {
 
           <div>
             {prop.benefits.head.map((benefit, index) => (
-              <p className="steps-how"><b>{benefit}</b> {prop.benefits.desc[index]}</p>
+              <p className="steps-how">
+                <b>{benefit}</b> {prop.benefits.desc[index]}
+              </p>
             ))}
           </div>
         </div>
@@ -70,8 +105,10 @@ const Product = ({ prop }) => {
 
       <div className="sec3-product">
         <div className="">
-        <p className="header-sec3Product">Ready to Clean Your HR Data?</p>
-        <p className="tag-sec3Product">Get Started with Data Validator or Request a Demo</p>
+          <p className="header-sec3Product">Ready to Clean Your HR Data?</p>
+          <p className="tag-sec3Product">
+            Get Started with Data Validator or Request a Demo
+          </p>
         </div>
         <button>Demo</button>
       </div>

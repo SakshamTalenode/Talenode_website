@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, redirect, redirectDocument } from "react-router-dom";
+import { a, redirect, redirectDocument } from "react-router-dom";
 import navLogo from "../assets/nav-logo.png";
 import { products, useCases } from "../utils/data";
 import dropbtn from "../assets/dropbtn.png";
@@ -32,83 +32,83 @@ const Navbar = () => {
 
   return (
     <div className={scrolled ? "navbar shadownav" : "navbar"} onMouseLeave={() => setDropbutton(false)}>
-      <Link
+      <a
         className="nav-logo-container"
         onClick={() => {
           window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
         }}
-        to="/"
+        href="/"
       >
         <img className="nav-logo" src={navLogo} />
-      </Link>
+      </a>
 
       <div className="nav-headers">
         <div className="dropdown">
-          <Link
+          <a
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             }}
-            to="/Solutions"
+            href="/Solutions"
             className="dropbtn flex items-center gap-1.5"
           >
             <p>
               Solutions
             </p>
-          </Link>
+          </a>
           <div className="dropdown-content">
             <div className="dropdown-content-container">
               <p>By product</p>
               {products.map((product) => (
-                <Link
+                <a
                   onClick={() => {
                     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                   }}
-                  to={`/products/${product.name}`}
-                  className="drop-link drop-link-sol"
+                  href={`/products/${product.name}`}
+                  className="drop-a drop-a-sol"
                 >
                   {product.name}<HiArrowSmallRight className="nav-link-highlight" />
-                </Link>
+                </a>
               ))}
             </div>
             <div className="dropdown-content-container">
               <p>By use Case</p>
               {useCases.map((useCase) => (
-                <Link
+                <a
                   onClick={() => {
                     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                   }}
-                  to={`/useCases/${useCase.name}`}
-                  className="drop-link drop-link-sol"
+                  href={`/useCases/${useCase.name}`}
+                  className="drop-a drop-a-sol"
                 >
                   {useCase.name}<HiArrowSmallRight className="nav-link-highlight" />
-                </Link>
+                </a>
               ))}
             </div>
           </div>
         </div>
 
         <div class="dropdown">
-          <Link
-            to="/Resources/#"
+          <a
+            href="/Resources/#"
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             }}
             className="dropbtn flex items-center justify-evenly gap-1.5"
           >
             <p>Resources</p>
-          </Link>
+          </a>
           <div class="dropdown-content">
             <div className="dropdown-content-container">
-              <a href="/Resources/#case-studies" className="drop-link">
+              <a href="/Resources/#case-studies" className="drop-a">
                 Case Studies<HiArrowSmallRight className="nav-link-highlight" />
               </a>
-              <a href="/Resources/#blogs" className="drop-link">
+              <a href="/Resources/#blogs" className="drop-a">
                 Blogs<HiArrowSmallRight className="nav-link-highlight" />
               </a>
-              <a href="/Resources/#whitepapers" className="drop-link">
+              <a href="/Resources/#whitepapers" className="drop-a">
                 Whitepapers<HiArrowSmallRight className="nav-link-highlight" />
               </a>
-              <a href="/Resources/#whitepapers" className="drop-link">
+              <a href="/Resources/#whitepapers" className="drop-a">
                 Webinars<HiArrowSmallRight className="nav-link-highlight" />
               </a>
             </div>
@@ -116,21 +116,21 @@ const Navbar = () => {
         </div>
 
         <div class="dropdown">
-          <Link
-            to="/About"
+          <a
+            href="/About"
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             }}
             className="dropbtn flex items-center justify-evenly gap-1.5"
           >
             <p>About Us</p>
-          </Link>
+          </a>
           <div class="dropdown-content drop-exception">
             <div className="dropdown-content-container px-0">
-              <Link className="drop-link">Mission<HiArrowSmallRight className="nav-link-highlight" /></Link>
-              <Link className="drop-link">Vision<HiArrowSmallRight className="nav-link-highlight" /></Link>
-              <Link className="drop-link">Team<HiArrowSmallRight className="nav-link-highlight" /></Link>
-              <Link className="drop-link">Contact Us<HiArrowSmallRight className="nav-link-highlight" /></Link>
+              <a className="drop-a">Mission<HiArrowSmallRight className="nav-link-highlight" /></a>
+              <a className="drop-a">Vision<HiArrowSmallRight className="nav-link-highlight" /></a>
+              <a className="drop-a">Team<HiArrowSmallRight className="nav-link-highlight" /></a>
+              <a className="drop-a">Contact Us<HiArrowSmallRight className="nav-link-highlight" /></a>
             </div>
           </div>
         </div>
@@ -165,7 +165,7 @@ const Navbar = () => {
                 <div className="dropdown-content-container-mob">
                   <p>By product</p>
                   {products.map((product) => (
-                    <Link
+                    <a
                       onClick={() => {
                         window.scrollTo({
                           top: 0,
@@ -173,17 +173,17 @@ const Navbar = () => {
                           behavior: "smooth",
                         });
                       }}
-                      to={`/products/${product.name}`}
-                      className="drop-link"
+                      href={`/products/${product.name}`}
+                      className="drop-a"
                     >
                       • {product.name}
-                    </Link>
+                    </a>
                   ))}
                 </div>
                 <div className="dropdown-content-container-mob">
                   <p>By use Case</p>
                   {useCases.map((useCase) => (
-                    <Link
+                    <a
                       onClick={() => {
                         window.scrollTo({
                           top: 0,
@@ -191,34 +191,34 @@ const Navbar = () => {
                           behavior: "smooth",
                         });
                       }}
-                      to={`/useCases/${useCase.name}`}
-                      className="drop-link"
+                      href={`/useCases/${useCase.name}`}
+                      className="drop-a"
                     >
                       • {useCase.name}
-                    </Link>
+                    </a>
                   ))}
                 </div>
               </div>
             </div>
-            <Link
-              to="/Resources"
+            <a
+              href="/Resources"
               onClick={() => {
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
               }}
               className="dropbtn dropdown gap-1.5"
             >
               Resources
-            </Link>
+            </a>
 
-            <Link
-              to="/About"
+            <a
+              href="/About"
               onClick={() => {
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
               }}
               className="dropbtn dropdown gap-1.5"
             >
               About Us
-            </Link>
+            </a>
           </div>
         ) : (
           <div className="empty-navmob"></div>

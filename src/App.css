@@ -417,7 +417,7 @@ html {
 .buttons-buttSec{
   width: 95%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .buttons-buttSec button{
@@ -455,7 +455,7 @@ html {
 }
 
 .header-buttSec{
-  padding: 30px 0px;
+  padding: 15px 0px;
   color: var(--sub-heading, #404040);
   font-size: 35px;
   font-style: normal;
@@ -474,18 +474,6 @@ html {
 .content-buttSec img{
   object-fit: contain;
   width: 300px;
-}
-
-
-/* Products */
-
-.products-home{
-  padding: 0 9vw;
-  display: flex;
-  flex-direction: column;
-  gap: 70px;
-  justify-content: center;
-  align-items: center;
 }
 
 /* SEC-2 */
@@ -1229,7 +1217,7 @@ html {
   color: var(--sub-heading, #404040);
   text-align: center;
   font-family: Poppins;
-  font-size: 40px;
+  font-size: 45px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -1246,6 +1234,69 @@ html {
   line-height: normal;
   padding-bottom: 40px;
 }
+
+/* Features */
+
+.products-home{
+  padding: 0 9vw;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttSec-Product .highButt{
+  background-color: #4a7c29;
+  color: #f0f8ea;
+}
+
+.content-buttSec a {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-flex;
+  width: 30%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  background: var(--heading, #4a7c29);
+  box-shadow: 0px 4px 12px 0px rgba(159, 212, 124, 0.5);
+
+  color: var(--bg, #f0f8ea);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+
+.features-productPage{
+  /* padding: 0px 9vw; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.buttSec-Product{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 25px 25px;
+  border-radius: 10px;
+  border: #9fd47c 2px solid;
+  box-shadow: 0px 0px 10px 0px #9fd47c;
+}
+
 
 .sec2-product {
   display: flex;
