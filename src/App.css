@@ -19,6 +19,7 @@ html {
 
 .navbar {
   background-color: #f0f8ea;
+  /* background-color: #ffffff; */
   height: 120px;
   width: 100%;
   position: fixed;
@@ -305,6 +306,7 @@ html {
 
 .homePage {
   background-color: #f0f8ea;
+  /* background-color: #ffffff; */
   padding-top: 170px;
   height: auto;
   display: flex;
@@ -1189,6 +1191,7 @@ html {
 
 .productPage {
   background-color: #f0f8ea;
+  /* background-color: #fff; */
   padding-top: 170px;
   display: flex;
   flex-direction: column;
@@ -1574,6 +1577,7 @@ html {
 
 .ucPage {
   background-color: #f0f8ea;
+  /* background-color: #ffffff; */
   padding-top: 170px;
   /* padding-bottom: 50px; */
   display: flex;
@@ -1756,6 +1760,7 @@ html {
 
 .solutionsPage {
   background-color: #f0f8ea;
+  /* background-color: #fff; */
   padding-top: 140px;
   padding-bottom: 50px;
   display: flex;
@@ -2047,6 +2052,7 @@ html {
   /* padding-left: 9vw; */
   /* padding-right: 9vw; */
   background-color: #f0f8ea;
+  /* background-color: #ffffff; */
 }
 
 .topics-resources {
@@ -2309,6 +2315,7 @@ html {
 
 .aboutPage {
   background-color: #f0f8ea;
+  /* background-color: #ffffff; */
   padding-top: 170px;
   display: flex;
   flex-direction: column;
