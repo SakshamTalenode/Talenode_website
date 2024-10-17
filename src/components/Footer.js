@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/footer-logo.png";
 import fb from "../assets/fb-footer.png";
+import mail from "../assets/mail-icon.png";
 import x from "../assets/x-footer.png";
 import li from "../assets/li-footer.png";
 import { products, useCases } from "../utils/data";
@@ -61,9 +62,8 @@ const Footer = () => {
         <div className="sec3-footer">
           <p>Get in Touch</p>
           <div className="footer-icons">
-            <img src={fb} />
-            <img src={x} />
-            <img src={li} />
+            <a target="_blank" href="https://www.linkedin.com/in/ankitabrol/" ><img src={li} width="45px" height="45px" /></a>
+            <a href="mailto:ContactUs@talenode.com" ><img src={mail} width="45px" height="45px" /></a>
           </div>
           <div className="sub-footer">
             <input type="email" placeholder="Enter your email..." />

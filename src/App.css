@@ -206,12 +206,13 @@ html {
     width: 70%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 5vw;
     align-items: center;
   }
 
   .nav-logo {
-    width: 90%;
+    width: 85%;
   }
 
   .nav-headers {
@@ -220,8 +221,7 @@ html {
 
   .nav-mobile {
     display: flex;
-    padding-right: 20px;
-    width: 30%;
+    padding-right: 5vw;
     justify-content: center;
     align-items: center;
   }
@@ -793,7 +793,7 @@ html {
   .homePage {
     width: 100vw;
     padding: 0 5vw;
-    padding-top: 120px;
+    padding-top: 100px;
     overflow-x: hidden;
     gap: 50px;
   }
@@ -863,7 +863,7 @@ html {
 
   .home-sec2 {
     padding: 0;
-    padding-top: 200px;
+    padding-top: 130px;
     width: 90vw;
   }
 
@@ -1119,7 +1119,7 @@ html {
 .footer-icons {
   display: flex;
   gap: 15px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .footer-icons img {
@@ -1660,7 +1660,8 @@ html {
   }
 
   .product-solution{
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    gap: 5px;
   }
 
   .header-how{
@@ -2907,7 +2908,7 @@ html {
 
   .meet-talenode{
     width: 100%;
-    gap: 40px;
+    gap: 20px;
   }
 
   .cards-meet{

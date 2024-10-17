@@ -16,7 +16,10 @@ import sightwhy from "../assets/IMG16-8.png";
 import nudgehome from "../assets/IMG8-8.png";
 import nudgehero from "../assets/IMG17-8.png";
 import nudgechal from "../assets/IMG18_1-8.png";
-import nudgea from "../assets/IMG19-8.png";
+import nudgea from "../assets/19B.png";
+import nudgeb from "../assets/IMG19-8.png";
+import nudgec from "../assets/19C-8.png";
+import nudged from "../assets/19D-8.png";
 import nudgewhy from "../assets/IMG20-8.png";
 import leader from "../assets/leader.png";
 
@@ -214,21 +217,21 @@ export const products = [
         toggle: false,
         desc: "Nudge continuously monitors these metrics against your predefined thresholds/tripwires.",
         demoLink: "https://talenode.com",
-        img: nudgea,
+        img: nudgeb,
       },
       {
         name: "Proactive Alerts",
         toggle: true,
         desc: "Receive instant notifications when metrics deviate from the norm, with clear explanations and action steps.",
         demoLink: "",
-        img: nudgea,
+        img: nudgec,
       },
       {
         name: "Customizable Thresholds",
         toggle: false,
         desc: "Set your own thresholds and metrics, so you’re always in control of what matters most.",
         demoLink: "",
-        img: nudgea,
+        img: nudged,
       },
     ],
 

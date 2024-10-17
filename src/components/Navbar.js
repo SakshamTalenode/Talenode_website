@@ -217,7 +217,7 @@ const Navbar = () => {
                   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                 }}
                 to="/Solutions"
-                className="dropbtn dropbtn-solns flex items-center gap-2 "
+                className="dropbtn dropbtn-solns flex items-center gap-2 res-nav-mob"
               >
                 Resources
                 <SlArrowDown className="down-button-hover p-0" />
