@@ -2763,6 +2763,7 @@ html {
 }
 
 .tag-leader{
+  color: #4A7C29;
   font-family: Poppins;
   font-style: italic;
   font-size: 18px;
@@ -2779,7 +2780,7 @@ html {
 .exp-leader{
   color: #4A7C29;
   font-family: Poppins;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   padding-bottom: 20px;
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import hero from "../assets/hero-about.png";
+import hero from "../assets/about-hero.png";
 import CarouselAbout from "../components/CarouselAbout";
 import Marquee from "react-fast-marquee";
 import analytics from "../assets/card1-icon.png";
