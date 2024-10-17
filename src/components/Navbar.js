@@ -31,7 +31,10 @@ const Navbar = () => {
   // useEffect(() => setDropbutton(false))
 
   return (
-    <div className={scrolled ? "navbar shadownav" : "navbar"} onMouseLeave={() => setDropbutton(false)}>
+    <div
+      className={scrolled ? "navbar shadownav" : "navbar"}
+      onMouseLeave={() => setDropbutton(false)}
+    >
       <a
         className="nav-logo-container"
         onClick={() => {
@@ -45,19 +48,17 @@ const Navbar = () => {
       <div className="nav-headers">
         <div className="dropdown">
           <a
-            onClick={() => {
-              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-            }}
-            href="/Solutions"
+            // onClick={() => {
+            //   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            // }}
+            // href="/Solutions"
             className="dropbtn flex items-center gap-1.5"
           >
-            <p>
-              Solutions
-            </p>
+            <p>Solutions</p>
           </a>
           <div className="dropdown-content">
             <div className="dropdown-content-container">
-              <p>By product</p>
+              {/* <p>By product</p> */}
               {products.map((product) => (
                 <a
                   onClick={() => {
@@ -66,11 +67,12 @@ const Navbar = () => {
                   href={`/products/${product.name}`}
                   className="drop-a drop-a-sol"
                 >
-                  {product.name}<HiArrowSmallRight className="nav-link-highlight" />
+                  {product.name}
+                  <HiArrowSmallRight className="nav-link-highlight" />
                 </a>
               ))}
             </div>
-            <div className="dropdown-content-container">
+            {/* <div className="dropdown-content-container">
               <p>By use Case</p>
               {useCases.map((useCase) => (
                 <a
@@ -83,16 +85,16 @@ const Navbar = () => {
                   {useCase.name}<HiArrowSmallRight className="nav-link-highlight" />
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
 
         <div class="dropdown">
           <a
-            href="/Resources/#"
-            onClick={() => {
-              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-            }}
+            // href="/Resources/#"
+            // onClick={() => {
+            //   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            // }}
             className="dropbtn flex items-center justify-evenly gap-1.5"
           >
             <p>Resources</p>
@@ -100,37 +102,43 @@ const Navbar = () => {
           <div class="dropdown-content">
             <div className="dropdown-content-container">
               <a href="/Resources/#case-studies" className="drop-a">
-                Case Studies<HiArrowSmallRight className="nav-link-highlight" />
+                Case Studies
+                <HiArrowSmallRight className="nav-link-highlight" />
               </a>
               <a href="/Resources/#blogs" className="drop-a">
-                Blogs<HiArrowSmallRight className="nav-link-highlight" />
+                Blogs
+                <HiArrowSmallRight className="nav-link-highlight" />
               </a>
-              <a href="/Resources/#whitepapers" className="drop-a">
+              {/* <a href="/Resources/#whitepapers" className="drop-a">
                 Whitepapers<HiArrowSmallRight className="nav-link-highlight" />
               </a>
               <a href="/Resources/#whitepapers" className="drop-a">
                 Webinars<HiArrowSmallRight className="nav-link-highlight" />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
 
         <div class="dropdown">
           <a
-            href="/About"
-            onClick={() => {
-              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-            }}
+            // href="/About"
+            // onClick={() => {
+            //   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            // }}
             className="dropbtn flex items-center justify-evenly gap-1.5"
           >
-            <p>About Us</p>
+            <p>Meet Talenode</p>
           </a>
           <div class="dropdown-content drop-exception">
             <div className="dropdown-content-container px-0">
-              <a className="drop-a">Mission<HiArrowSmallRight className="nav-link-highlight" /></a>
-              <a className="drop-a">Vision<HiArrowSmallRight className="nav-link-highlight" /></a>
-              <a className="drop-a">Team<HiArrowSmallRight className="nav-link-highlight" /></a>
-              <a className="drop-a">Contact Us<HiArrowSmallRight className="nav-link-highlight" /></a>
+              <a href="/about" className="drop-a">
+                About Us
+                <HiArrowSmallRight className="nav-link-highlight" />
+              </a>
+              <a href="/about/#contact" className="drop-a">
+                Contact Us
+                <HiArrowSmallRight className="nav-link-highlight" />
+              </a>
             </div>
           </div>
         </div>
@@ -163,7 +171,7 @@ const Navbar = () => {
               </div>
               <div class={toggle ? "dropdown-content-mob" : "hidden"}>
                 <div className="dropdown-content-container-mob">
-                  <p>By product</p>
+                  {/* <p>By product</p> */}
                   {products.map((product) => (
                     <a
                       onClick={() => {
@@ -180,7 +188,7 @@ const Navbar = () => {
                     </a>
                   ))}
                 </div>
-                <div className="dropdown-content-container-mob">
+                {/* <div className="dropdown-content-container-mob">
                   <p>By use Case</p>
                   {useCases.map((useCase) => (
                     <a
@@ -197,18 +205,54 @@ const Navbar = () => {
                       • {useCase.name}
                     </a>
                   ))}
+                </div> */}
+              </div>
+            </div>
+            <div
+              onClick={() => setToggle(!toggle)}
+              className={toggle ? "dropdown" : "dropdown2"}
+            >
+              <div
+                onClick={() => {
+                  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                }}
+                to="/Solutions"
+                className="dropbtn dropbtn-solns flex items-center gap-2 "
+              >
+                Resources
+                <SlArrowDown className="down-button-hover p-0" />
+              </div>
+              <div class={toggle ? "dropdown-content-mob" : "hidden"}>
+                <div className="dropdown-content-container-mob">
+                  <a
+                    onClick={() => {
+                      window.scrollTo({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
+                    href={`/`}
+                    className="drop-a"
+                  >
+                    • Case Studies
+                  </a>
+                  <a
+                    onClick={() => {
+                      window.scrollTo({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
+                    href={`/`}
+                    className="drop-a"
+                  >
+                    • Blogs
+                  </a>
                 </div>
               </div>
             </div>
-            <a
-              href="/Resources"
-              onClick={() => {
-                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-              }}
-              className="dropbtn dropdown gap-1.5"
-            >
-              Resources
-            </a>
 
             <a
               href="/About"
@@ -217,7 +261,7 @@ const Navbar = () => {
               }}
               className="dropbtn dropdown gap-1.5"
             >
-              About Us
+              Meet Talenode
             </a>
           </div>
         ) : (

@@ -1,17 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const SubscribeCard = () => {
+
   return (
     <div className='sub-card'>
       <div className='header-subCard'>
         <p>Sign up for our newsletter and receive regular blog updates!</p>
       </div>
-      <div className='email-subCard'>
-        <input className='input-subCard' type='text' placeholder='Enter your email...'/>
-        <button className='btn-subCard'>
-            Subscribe!
+      <form className='email-subCard'>
+        <input className='input-subCard' type='email' placeholder='Enter your email...'/>
+        <button type='submit' className='btn-subCard'>
+            Subscribe
         </button>
-      </div>
+      </form>
     </div>
   )
 }

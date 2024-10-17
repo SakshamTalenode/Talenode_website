@@ -23,17 +23,14 @@ const Footer = () => {
           <a href="/">
             <p>Home</p>
           </a>
-          <a href="/Solutions">
+          {/* <a href="/Solutions">
             <p>Solutions</p>
-          </a>
+          </a> */}
           <a href="/Resources">
             <p>Resources</p>
           </a>
           <a href="/About">
             <p>About Us</p>
-          </a>
-          <a href="/About/#contact-us">
-            <p>Contact Us</p>
           </a>
         </div>
 
@@ -49,7 +46,7 @@ const Footer = () => {
           ))}
         </div>
 
-        <div className="sec2-footer footer-hide-mobile">
+        {/* <div className="sec2-footer footer-hide-mobile">
           <a href="/Solutions">
             <h3 className="">Use Cases</h3>
           </a>
@@ -59,7 +56,7 @@ const Footer = () => {
               <p>{useCase.name}</p>
             </a>
           ))}
-        </div>
+        </div> */}
 
         <div className="sec3-footer">
           <p>Get in Touch</p>
@@ -77,7 +74,7 @@ const Footer = () => {
 
       <div className="divider-footer"></div>
 
-      <div className="footer-end">(C) 2022 Glossy, All Rights Reserved</div>
+      <div className="footer-end">(C) 2024 Talenode, All Rights Reserved</div>
     </div>
   );
 };

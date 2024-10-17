@@ -81,7 +81,7 @@ export const products = [
         "Your Personal Data Guardian :",
       ],
       desc: [
-        "Get your hands on Accurate, Complete, Timely (ACT) Data always",
+        "Get your hands on Accurate, Complete, Timely (ACT) Data",
         "Make better organization decisions with reliable, validated data.",
         "Reduce manual, error-prone data cleaning.",
         "Adapt the tool to your organization realities with custom rulesets",
@@ -441,24 +441,16 @@ export const leaders = [
   {
     name: "Ankit Abrol",
     designation: "Founder",
-    comps: "Deloite, IBM, AON",
+    comps: "Swiggy, Aon Consulting, Gartner | XLRI Jamshedpur",
     img: leader,
-    desc: "Ankit Abrol brings over a decade of experience in data analytics, business intelligence, and strategic leadership. With a background in HRM from XLRI Ja",
+    desc: "Ankit has always been passionate about using data to design actionable insights that propel businesses forward. His journey through the complexities of data management inspired him to start Talenode, where he is committed to help organizations rethink how to harness talent data.",
   },
 
   {
     name: "Raswinder Jit Singh",
     designation: "Advisor",
-    comps: "Mercer, uknowva, unberry, inqubex",
+    comps: "Inmobi, Aon Consulting, Snapdeal, Gartner, Deloitte",
     img: leader,
-    desc: "Raswinder Jit Singh is a seasoned HR and talent management expert with a proven track record in driving organizational growth through strategic human capital initiatives. ",
-  },
-
-  {
-    name: "Nikhil",
-    designation: "Advisor",
-    comps: "Deloite, AON, BLA",
-    img: leader,
-    desc: "Raswinder Jit Singh is a seasoned HR and talent management expert with a proven track record in driving organizational growth through strategic human capital initiatives. ",
+    desc: "Raswinder is a seasoned HR expert with a proven track record in driving organizational growth through strategic human capital initiatives. His zeal for creating meaningful connections between talent and business outcomes led him to partner on the journey of building Talenode.",
   },
 ];

@@ -64,9 +64,9 @@ const Product = ({ prop }) => {
             <div>
               <p className="header-buttSec">{currBtn.name}</p>
               <p className="tagline-buttSec">{currBtn.desc}</p>
-              <a href={currBtn.demoLink}>
+              {/* <a href={currBtn.demoLink}>
                 <button>Learn More</button>
-              </a>
+              </a> */}
             </div>
             <img src={currBtn.img} />
           </div>
@@ -103,7 +103,7 @@ const Product = ({ prop }) => {
         <img src={prop.benefitsImg} />
       </div>
 
-      <div className="sec3-product">
+      {/* <div className="sec3-product">
         <div className="">
           <p className="header-sec3Product">Ready to Clean Your HR Data?</p>
           <p className="tag-sec3Product">
@@ -111,6 +111,20 @@ const Product = ({ prop }) => {
           </p>
         </div>
         <button>Demo</button>
+      </div> */}
+
+      <div className="sub-card">
+          <div className="header-subCard">
+            <p>Take the next step in your people analytics journey today</p>
+          </div>
+          <div className="email-subCard">
+            {/* <input
+              className="input-subCard"
+              type="text"
+              placeholder="Enter your email..."
+            /> */}
+            <a href="mailto:ContactUs@talenode.com" className="btn-actionCard">Speak With Us</a>
+          </div>
       </div>
     </div>
   );
