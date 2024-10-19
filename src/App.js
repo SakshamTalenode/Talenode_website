@@ -15,6 +15,8 @@ import Error from "./pages/Error";
 import { useCookies } from "react-cookie";
 import CookieForm from "./components/CookieForm";
 import DataSight from "./pages/subProducts/DataSight";
+import Blogs from "./pages/Blogs";
+import CaseStudies from "./pages/CaseStudies";
 
 function App() {
   // useEffect(() => {
@@ -48,7 +50,9 @@ function App() {
             element={<UseCase prop={useCase} />}
           />
         ))} */}
-        <Route path="/Resources" element={<Resources />} />
+        {/* <Route path="/Resources" element={<Resources />} /> */}
+        <Route path="/Resources/Blogs" element={<Blogs />} />
+        <Route path="/Resources/CaseStudies" element={<CaseStudies />} />
         <Route path="/About" element={<About />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
       </Routes>

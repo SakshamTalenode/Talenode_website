@@ -101,11 +101,11 @@ const Navbar = () => {
           </a>
           <div class="dropdown-content">
             <div className="dropdown-content-container">
-              <a href="/Resources/#case-studies" className="drop-a">
+              <a href="/Resources/CaseStudies" className="drop-a">
                 Case Studies
                 <HiArrowSmallRight className="nav-link-highlight" />
               </a>
-              <a href="/Resources/#blogs" className="drop-a">
+              <a href="/Resources/Blogs" className="drop-a">
                 Blogs
                 <HiArrowSmallRight className="nav-link-highlight" />
               </a>
@@ -213,10 +213,10 @@ const Navbar = () => {
               className={toggle ? "dropdown" : "dropdown2"}
             >
               <div
-                onClick={() => {
-                  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-                }}
-                to="/Solutions"
+                // onClick={() => {
+                //   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                // }}
+                // to="/Resources"
                 className="dropbtn dropbtn-solns flex items-center gap-2 res-nav-mob"
               >
                 Resources
@@ -232,7 +232,7 @@ const Navbar = () => {
                         behavior: "smooth",
                       });
                     }}
-                    href={`/`}
+                    href="/Resources/CaseStudies"
                     className="drop-a"
                   >
                     • Case Studies
@@ -245,7 +245,7 @@ const Navbar = () => {
                         behavior: "smooth",
                       });
                     }}
-                    href={`/`}
+                    href="Resources/Blogs"
                     className="drop-a"
                   >
                     • Blogs

@@ -3141,3 +3141,133 @@ html {
     text-align: center;
   }
 }
+
+/* BLOGS - START */
+
+.blogsPage{
+  padding: 0 9vw;
+  padding-top: 170px;
+  padding-bottom: 50px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.blog-topics{
+  width: 100%;
+  /* height: 30vh; */
+  display: flex;
+  gap: 30px;
+  background-color: #f0f8ea;
+  padding: 20px 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #9fd47c;
+  /* overflow-x: scroll; */
+}
+
+.blog-card{
+  width: 25%;
+  display: inline-block;
+  padding: 14px;
+  background-color: #f0f8ea;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 0px #9fd47c;
+}
+
+.blog-card div{
+  display: flex;
+  gap: 10px;
+}
+
+.blog-card img{
+  width: 50px;
+  object-fit: contain;
+}
+
+.blogCard-header{
+  width: 80%;
+  color: var(--sub-heading, #404040);
+  font-family: Poppins;
+  text-align: left;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 28px;
+  padding-bottom: 5px;
+}
+
+.blogCard-tag{
+  width: 80%;
+  color: var(--sub-heading, #404040);
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: left;
+  padding-left: 3px;
+}
+
+.blog-card:hover{
+  background-color: #404040;
+  transition: background-color 500ms;
+}
+
+.blog-card:hover .blogCard-header{
+  color: #f0f8ea;
+  transition: color 300ms;
+}
+
+.blog-card:hover .blogCard-tag{
+  color: #f0f8ea;
+  transition: color 300ms;
+}
+
+.blog-main{
+  overflow-y: scroll;
+  white-space: wrap;
+  padding: 15px 15px;
+  width: 100%;
+  height: 90vh;
+  background-color: #f0f8ea;
+  box-shadow: 0px 0px 10px 0px #9fd47c;
+  border-radius: 10px;
+}
+
+.blogMain-header{
+  color: var(--sub-heading, #404040);
+  font-family: Poppins;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.blog-main div{
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.blog-main img{
+  width: 30%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.blogMain-para{
+  color: var(--sub-heading, #404040);
+  font-family: Poppins;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  padding-bottom: 40px;
+}

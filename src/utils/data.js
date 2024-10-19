@@ -457,3 +457,10 @@ export const leaders = [
     desc: "Raswinder is a seasoned HR expert with a proven track record in driving organizational growth through strategic human capital initiatives. His zeal for creating meaningful connections between talent and business outcomes led him to partner on the journey of building Talenode.",
   },
 ];
+
+export const blogs = [
+  {
+    header: "",
+    tag: "",
+  },
+];
