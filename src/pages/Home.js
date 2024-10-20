@@ -82,7 +82,7 @@ const Home = () => {
           <Tilt>
             <div className="card-sec2">
               <img src={synergy} width="150px" height="150px"/>
-              <p className="header-card">Perfect Synergy of Advisory</p>
+              <p className="header-card">Blend of Advisory and Analytics</p>
               <p className="tagline-card">
                 Combine the expertise of 'People' with the effectiveness of
                 'Technology' to deliver robust people analytics solutions
@@ -113,7 +113,7 @@ const Home = () => {
 
           <div className="card-sec2">
           <img src={synergy} width="150px" height="150px"/>
-            <p className="header-card">The Perfect Synergy</p>
+            <p className="header-card">Advisory and Analytics</p>
             <p className="tagline-card">
               Expertise of 'People' with efficiency and precision.
             </p>
@@ -171,7 +171,7 @@ const Home = () => {
 
       <div className="products-home">
         <div className="product-solution">
-          <p className="header-heroProduct">Our suite of Offerings</p>
+          <p className="header-heroProduct">Our Suite of Offerings</p>
           <p className="tagline-heroProduct" style={{ padding: "0" }}>
             Talenode aims to take the burning people analytics challenges head
             on.

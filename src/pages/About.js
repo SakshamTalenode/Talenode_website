@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import hero from "../assets/about-hero.png";
 import CarouselAbout from "../components/CarouselAbout";
 import Marquee from "react-fast-marquee";
@@ -19,6 +20,17 @@ import {
 
 const About = () => {
   const [currleader, setCurrleader] = useState(leaders[0]);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === '#contact') {
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
 
   return (
     <div className="aboutPage">
@@ -74,7 +86,7 @@ const About = () => {
           <Tilt>
             <div className="card-sec2">
               <img src={synergy} width="150px" height="150px" />
-              <p className="header-card">Perfect Synergy of Advisory</p>
+              <p className="header-card">Blend of Advisory and Analytics</p>
               <p className="tagline-card">
                 Combine the expertise of 'People' with the effectiveness of
                 'Technology' to deliver robust people analytics solutions
@@ -105,7 +117,7 @@ const About = () => {
 
           <div className="card-sec2">
             <img src={synergy} width="150px" height="150px" />
-            <p className="header-card">The Perfect Synergy</p>
+            <p className="header-card">Advisory and Analytics</p>
             <p className="tagline-card">
               Expertise of 'People' with efficiency and precision.
             </p>
@@ -121,7 +133,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="meet-talenode">
+      <div id="contact" className="meet-talenode">
 
         <p className="headerHero-about w-100">Meet our Leaders</p>
 
@@ -204,7 +216,7 @@ const About = () => {
         </div>
       </div> */}
 
-      <div id="#contact" className="subCard-sec">
+      <div className="subCard-sec">
         {/* <SubscribeCard /> */}
         <div className="sub-card">
           <div className="header-subCard">

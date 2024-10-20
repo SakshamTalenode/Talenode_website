@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { a, redirect, redirectDocument } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import navLogo from "../assets/nav-logo.png";
 import { products, useCases } from "../utils/data";
 import dropbtn from "../assets/dropbtn.png";
@@ -12,6 +12,8 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   const [dropbutton, setDropbutton] = useState(false);
+
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -135,7 +137,7 @@ const Navbar = () => {
                 About Us
                 <HiArrowSmallRight className="nav-link-highlight" />
               </a>
-              <a href="/about/#contact" className="drop-a">
+              <a href="/about#contact" className="drop-a">
                 Contact Us
                 <HiArrowSmallRight className="nav-link-highlight" />
               </a>

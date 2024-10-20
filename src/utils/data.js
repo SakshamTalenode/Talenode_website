@@ -37,7 +37,7 @@ export const products = [
     imgHome: valhome,
     challengeStatement: "The Challenge of Managing People Data",
     challengeDesc:
-      "People data is fragmented and becoming exponentially dynamic with every passing moment.  Organizations are investing inordinate efforts in prepping data but  old-school data management is slow and error-prone, leaving them stuck with messy, unreliable data that is far from ready for action. Poor-quality data leads to erroneous insights and conclusions, which impacts leadership decisions and their trust in data.",
+      "People data is fragmented and becoming exponentially dynamic. Organizations are investing inordinate efforts in prepping data but old-school data management is slow and error-prone, leaving them stuck with messy, unreliable data that is far from ready for action. Poor-quality data leads to erroneous insights and conclusions, which impacts leadership decisions and their trust in data.",
     challengeImg: valchallenge,
     header2:
       "Meet Data Validator - Your Solution for Clean, Validated People Data",
@@ -84,10 +84,10 @@ export const products = [
         "Your Personal Data Guardian :",
       ],
       desc: [
-        "Get your hands on Accurate, Complete, Timely (ACT) Data",
+        "Get your hands on Accurate, Complete, Timely (ACT) Data.",
         "Make better organization decisions with reliable, validated data.",
         "Reduce manual, error-prone data cleaning.",
-        "Adapt the tool to your organization realities with custom rulesets",
+        "Adapt the tool to your organization realities with custom rulesets.",
       ],
     },
     benefitsImg: valwhy,
@@ -463,4 +463,15 @@ export const blogs = [
     header: "",
     tag: "",
   },
+];
+
+export const CaseStudies = [
+  {
+    SNO: 1,
+    img: "",
+    heading: "How Talenode Helped a Consumer Tech Unicorn Achieve 16% Wage Bill Saving",
+    tag: "A leading Consumer Tech Unicorn aimed to enhance profitability, but...",
+    objective: ""
+
+  }
 ];

@@ -4,33 +4,9 @@ import blog1 from "../assets/blog 1.jpg";
 const Blogs = () => {
   return (
     <div className="blogsPage">
+      <p className="header-heroProduct">Blogs</p>
+
       <div className="blog-topics">
-        <button className="blog-card">
-          <div>
-            <img src={blog1} />
-            <p className="blogCard-header">
-              AI in HR: It’s All About Data (Not Magic)
-            </p>
-          </div>
-          <p className="blogCard-tag">
-            AI isn’t a magic solution for HR, but with the right data, guidance,
-            and expectations...
-          </p>
-        </button>
-
-        <button className="blog-card">
-          <div>
-            <img src={blog1} />
-            <p className="blogCard-header">
-              AI in HR: It’s All About Data (Not Magic)
-            </p>
-          </div>
-          <p className="blogCard-tag">
-            AI isn’t a magic solution for HR, but with the right data, guidance,
-            and expectations...
-          </p>
-        </button>
-
         <button className="blog-card">
           <div>
             <img src={blog1} />
@@ -46,12 +22,11 @@ const Blogs = () => {
       </div>
 
       <div className="blog-main">
-        <p className="blogMain-header">
-          AI in HR: It's All About Data (Not Magic)
-        </p>
-        <div>
+          <p className="blogMain-header">AI in HR: It's All About Data (Not Magic)</p>
+          
+        <div className="content-blog">
           <img src={blog1} />
-          <p className="blogMain-para">
+          <p className="blogMain-para ">
             Ever tried uploading an Excel sheet into ChatGPT or asking it to
             analyze a simple HR table, only to get some baffling or downright
             incorrect responses? You’re not alone. The truth is, AI isn’t
@@ -63,24 +38,21 @@ const Blogs = () => {
             (think recruitment and engagement) or to cut costs by automating
             tedious tasks (like sifting through hundreds of resumes). But before
             we imagine AI swooping in as the ultimate problem-solver, there are
-            a few gaps to be aware of:
+            a few gaps to be aware of:<br/>
+            <b>1. AI and Complexity:</b> AI struggles when faced with complex,
+            nuanced data. It’s like giving someone a puzzle where half the pieces
+            are missing—it just can’t complete the picture.
+            <br />⁠<b>2. AI Fumbles with Numbers:</b> Surprisingly, AI isn’t the
+            math genius we thought it would be. Ask it to crunch turnover rates,
+            and you might be in for some eyebrow-raising results.
+            <br />
+            <b>3. ⁠AI Can’t Think Beyond Its Training:</b> While AI excels at
+            pattern recognition, it is not great at thinking outside the box.
+            Without structured, clear data inputs, it is like trying to make sense
+            of a jumbled grocery list; it’ll get some of it right, but not the
+            whole thing.{" "}
           </p>
         </div>
-
-        <p className="blogMain-para">
-          <b>1. AI and Complexity:</b> AI struggles when faced with complex,
-          nuanced data. It’s like giving someone a puzzle where half the pieces
-          are missing—it just can’t complete the picture.
-          <br />⁠<b>2. AI Fumbles with Numbers:</b> Surprisingly, AI isn’t the
-          math genius we thought it would be. Ask it to crunch turnover rates,
-          and you might be in for some eyebrow-raising results.
-          <br />
-          <b>3. ⁠AI Can’t Think Beyond Its Training:</b> While AI excels at
-          pattern recognition, it is not great at thinking outside the box.
-          Without structured, clear data inputs, it is like trying to make sense
-          of a jumbled grocery list; it’ll get some of it right, but not the
-          whole thing.{" "}
-        </p>
 
         <p className="blogMain-para">
           <b>AI is Like Fine Wine—It Gets Better with Time</b>
@@ -100,15 +72,15 @@ const Blogs = () => {
           Here’s where the data-first approach comes into play. Before expecting
           AI to perform miracles in your HR department, focus on the following:{" "}
           <br />
-          <b>1. ⁠Define Clear Use Cases:</b> Be specific about what you want AI
+          {" "}<b>1. ⁠Define Clear Use Cases:</b> Be specific about what you want AI
           to do. Don’t just ask it to "help with hiring"; instead, have it
           identify candidates basis specific metrics.
           <br />
-          <b>2. ⁠Clean and Organize Your Data:</b> AI is only as good as the
+          {" "}<b>2. ⁠Clean and Organize Your Data:</b> AI is only as good as the
           data it analyzes. If your data is messy, outdated, or inconsistent,
           your AI results will be, too.
           <br />
-          <b>3. ⁠Integrate Data Platforms:</b> Create a system where AI can pull
+          {" "}<b>3. ⁠Integrate Data Platforms:</b> Create a system where AI can pull
           from various HR sources (HRMS, payroll, performance reviews, employee
           feedback) so it has a full picture of your organization. ⁠<br />
           <b>4. Foster a Data-Driven Culture:</b> Encourage your team to make
@@ -128,6 +100,7 @@ const Blogs = () => {
           right data, guidance, and expectations, it can dramatically improve
           decision-making and streamline processes.
         </p>
+        
       </div>
     </div>
   );
