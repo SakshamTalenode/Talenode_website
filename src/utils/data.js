@@ -21,7 +21,8 @@ import nudgeb from "../assets/IMG19-8.png";
 import nudgec from "../assets/19C-8.png";
 import nudged from "../assets/19D-8.png";
 import nudgewhy from "../assets/IMG20-8.png";
-import leader from "../assets/leader.png";
+import ankit from "../assets/Ankit.jpg";
+import raswinder from "../assets/Raswinder.jpg";
 
 export const products = [
   // DATA VALIDATOR
@@ -445,7 +446,7 @@ export const leaders = [
     name: "Ankit Abrol",
     designation: "Founder",
     comps: "Swiggy, Aon Consulting, Gartner | XLRI Jamshedpur",
-    img: leader,
+    img: ankit,
     desc: "Ankit has always been passionate about using data to design actionable insights that propel businesses forward. His journey through the complexities of data management inspired him to start Talenode, where he is committed to help organizations rethink how to harness talent data.",
   },
 
@@ -453,7 +454,7 @@ export const leaders = [
     name: "Raswinder Jit Singh",
     designation: "Advisor",
     comps: "Inmobi, Aon Consulting, Snapdeal, Gartner, Deloitte",
-    img: leader,
+    img: raswinder,
     desc: "Raswinder is a seasoned HR expert with a proven track record in driving organizational growth through strategic human capital initiatives. His zeal for creating meaningful connections between talent and business outcomes led him to partner on the journey of building Talenode.",
   },
 ];
