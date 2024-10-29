@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import blog1 from "../assets/blog 1.jpg";
+import blog1 from "../assets/blog1.png";
+import blog2 from "../assets/blog2.mp4";
 
 const Blogs = () => {
   const [currBlog, setCurrBlog] = useState(1);
@@ -31,18 +32,20 @@ const Blogs = () => {
           onClick={() => setCurrBlog(2)}
         >
           <div>
-            <img src={blog1} />
+            <video playsinline autoplay="1" muted loop>
+              <source src={blog2} type="video/mp4" />
+            </video>
             <p className="blogCard-header">
               AI in HR: It’s All About Data (Not Magic)
             </p>
           </div>
           <p className="blogCard-tag">
-            AI isn’t a magic solution for HR, but with the right data, guidance,
+            AI isn't a magic solution for HR, but with the right data, guidance,
             and expectations...
           </p>
         </button>
 
-        <button
+        {/* <button
           className={currBlog == "3" ? "blog-card curr-blogCard" : "blog-card"}
           onClick={() => setCurrBlog(3)}
         >
@@ -56,7 +59,7 @@ const Blogs = () => {
             Remember how we discussed children viewing the word from a different
             lens. They take in everything...
           </p>
-        </button>
+        </button> */}
       </div>
 
       {currBlog == 1 ? (
@@ -84,32 +87,32 @@ const Blogs = () => {
               ensure your child is safe and sound. You learn to differentiate
               when your child is faking vs. serious. You don’t take everything
               your child says as true and you also do not take every word for
-              granted. You are patient with your child as you know you are
-              responsible for shaping their world and all of this is part of the
-              their learning. As the child interacts with you and its
-              surrounding environment and takes cues from different mediums -
-              voice, modulations, eyes, gestures, their world expands and gets
-              shaped as they start putting things in context. While they are
-              learning, you either reward or punish (both in varying degrees :P)
-              your child’s responses and actions to align them better with your
-              desired behaviours.
+              granted. You are patient with your child as you know you are responsible for
+              shaping their world
             </p>
           </div>
 
           <p className="blogMain-para">
-            More you interact and give feedback, more they learn. With more
-            diverse information, the child becomes versatile at identifying
-            connections and starts interpreting, evaluating and creating their
-            own version of the world. This is an iterative process and the
-            child’s understanding continues to refine with every passing
-            interaction and feedback. They may forget a few things and you help
-            them recall, reshape their view. You will continue to nurture the
-            child, more so till they attain the ability to think independently.
-            Once you reach that stage, it’s a win-win situation. While you have
-            fulfilled your role as a parent, the child can think and act with
-            limited guidance and can even start supporting you. From what I have
-            experienced from mine, parents continue to nurture even after
-            children think they can operate autonomously (cute!).
+            and all of this is part of the their learning.
+            As the child interacts with you and its surrounding environment and
+            takes cues from different mediums - voice, modulations, eyes,
+            gestures, their world expands and gets shaped as they start putting
+            things in context. While they are learning, you either reward or
+            punish (both in varying degrees :P) your child’s responses and
+            actions to align them better with your desired behaviours. More you
+            interact and give feedback, more they learn. With more diverse
+            information, the child becomes versatile at identifying connections
+            and starts interpreting, evaluating and creating their own version
+            of the world. This is an iterative process and the child’s
+            understanding continues to refine with every passing interaction and
+            feedback. They may forget a few things and you help them recall,
+            reshape their view. You will continue to nurture the child, more so
+            till they attain the ability to think independently. Once you reach
+            that stage, it’s a win-win situation. While you have fulfilled your
+            role as a parent, the child can think and act with limited guidance
+            and can even start supporting you. From what I have experienced from
+            mine, parents continue to nurture even after children think they can
+            operate autonomously (cute!).
           </p>
 
           <p className="blogMain-para">
@@ -183,8 +186,10 @@ const Blogs = () => {
           </p>
 
           <div className="content-blog">
-            <img src={blog1} />
-            <p className="blogMain-para ">
+            <video playsinline autoplay="1" muted loop>
+              <source src={blog2} type="video/mp4" />
+            </video>
+            <p className="blogMain-para blogMain-para-nopadding">
               Ever tried uploading an Excel sheet into ChatGPT or asking it to
               analyze a simple HR table, only to get some baffling or downright
               incorrect responses? You’re not alone. The truth is, AI isn’t
@@ -202,19 +207,19 @@ const Blogs = () => {
               <b>1. AI and Complexity:</b> AI struggles when faced with complex,
               nuanced data. It’s like giving someone a puzzle where half the
               pieces are missing—it just can’t complete the picture.
-              <br />⁠<b>2. AI Fumbles with Numbers:</b> Surprisingly, AI isn’t
-              the math genius we thought it would be. Ask it to crunch turnover
-              rates, and you might be in for some eyebrow-raising results.
-              <br />
-              <b>3. ⁠AI Can’t Think Beyond Its Training:</b> While AI excels at
-              pattern recognition, it is not great at thinking outside the box.
-              Without structured, clear data inputs, it is like trying to make
-              sense of a jumbled grocery list; it’ll get some of it right, but
-              not the whole thing.{" "}
             </p>
           </div>
 
           <p className="blogMain-para">
+            ⁠<b>2. AI Fumbles with Numbers:</b> Surprisingly, AI isn’t the math
+            genius we thought it would be. Ask it to crunch turnover rates, and
+            you might be in for some eyebrow-raising results.
+            <br />
+            <b>3. ⁠AI Can’t Think Beyond Its Training:</b> While AI excels at
+            pattern recognition, it is not great at thinking outside the box.
+            Without structured, clear data inputs, it is like trying to make
+            sense of a jumbled grocery list; it’ll get some of it right, but not
+            the whole thing. <br />
             <b>AI is Like Fine Wine—It Gets Better with Time</b>
             <br />
             Generative AI, like ChatGPT, is improving, but it's not an overnight
@@ -263,7 +268,7 @@ const Blogs = () => {
       ) : (
         <></>
       )}
-      {currBlog == 3 ? (
+      {/* {currBlog == 3 ? (
         <div className="blog-main blog-3">
           <p className="blogMain-header">
             ChatGPT matures with Time, Just Like Your Child
@@ -367,7 +372,7 @@ const Blogs = () => {
         </div>
       ) : (
         <></>
-      )}
+      )} */}
     </div>
   );
 };

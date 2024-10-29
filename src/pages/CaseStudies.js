@@ -1,5 +1,8 @@
 import { useState } from "react";
-import cs1 from "../assets/blog 1.jpg";
+import cs1Default from "../assets/blog 1.jpg";
+import cs1 from "../assets/cs1.mp4";
+import cs2 from "../assets/cs2.png";
+import cs3 from "../assets/cs3.png";
 
 const CaseStudies = () => {
   const [currCS, setCurrCS] = useState(1);
@@ -15,7 +18,9 @@ const CaseStudies = () => {
             onClick={() => setCurrCS(1)}
           >
             <div>
-              <img src={cs1} />
+              <video playsinline autoplay="1" muted loop>
+                <source src={cs1} type="video/mp4" />
+              </video>
               <p className="blogCard-header">
                 How Talenode Helped a Consumer Tech Unicorn Achieve 16% Wage
                 Bill Savings
@@ -32,7 +37,7 @@ const CaseStudies = () => {
             onClick={() => setCurrCS(2)}
           >
             <div>
-              <img src={cs1} />
+              <img src={cs2} />
               <p className="blogCard-header">
                 How Talenode Helped India’s Leading BFSI Organization Reduce
                 Turnover by 44% Client Challenge:
@@ -49,7 +54,7 @@ const CaseStudies = () => {
             onClick={() => setCurrCS(3)}
           >
             <div>
-              <img src={cs1} />
+              <img src={cs3} />
               <p className="blogCard-header">
                 How Talenode Helped a SaaS MNC Reduce Time to Fill by 40% and
                 Enhance Candidate Experience
@@ -70,7 +75,9 @@ const CaseStudies = () => {
             </p>
 
             <div className="content-blog">
-              <img src={cs1} />
+              <video playsinline autoplay="1" muted loop>
+                <source src={cs1} type="video/mp4" />
+              </video>
               <p className="blogMain-para blogMain-para-nopadding">
                 <b>Client Challenge:</b>
                 <br /> A leading Consumer Tech Unicorn aimed to enhance
@@ -90,13 +97,14 @@ const CaseStudies = () => {
                  Integrated internal HR data with market benchmarks to identify
                 compensation disparities and inefficiencies in headcount.
                 <br />
-                <b>2. Layers & Spans Analysis:</b> Conducted a detailed analysis
-                of the organization’s hierarchy, revealing inconsistent spans of
-                control and an overly complex management structure.
               </p>
             </div>
 
             <p className="blogMain-para">
+              <b>2. Layers & Spans Analysis:</b> Conducted a detailed analysis
+              of the organization’s hierarchy, revealing inconsistent spans of
+              control and an overly complex management structure.
+              <br />
               <b>3. Market Benchmarking:</b> Analyzed external compensation
               trends and internal pay parity to identify discrepancies in salary
               structures across departments. <br />
@@ -154,7 +162,7 @@ const CaseStudies = () => {
             </p>
 
             <div className="content-blog">
-              <img src={cs1} />
+              <img src={cs2} />
               <p className="blogMain-para blogMain-para-nopadding">
                 <b>Client Challenge:</b>
                 <br /> India’s leading BFSI organization faced an alarming
@@ -170,21 +178,22 @@ const CaseStudies = () => {
                 <br /> Talenode initiated a comprehensive, analytics-driven
                 approach to tackle the turnover issue:
                 <br />
-                <b>1. Initial Analysis:</b>
-                Conducted a thorough review of employee data, revealing that 41%
-                of the turnover occurred in just 10% of their branches.
-                <br />
-                <b>2. Intermediary Action:</b> Engaged in branch-specific
-                investigations in A, B, and C branches through: <br />{" "}
-                <i>Manager Reviews: </i>Facilitated discussions with branch
-                managers to uncover localized issues.
-                <br />
-                <i>Employee Surveys:</i> Gathered feedback from employees to
-                identify pain points affecting retention.
               </p>
             </div>
 
             <p className="blogMain-para">
+              <b>1. Initial Analysis:</b> Conducted a thorough review of
+              employee data, revealing that 41% of the turnover occurred in just
+              10% of their branches.
+              <br />
+              <b>2. Intermediary Action:</b> Engaged in branch-specific
+              investigations in A, B, and C branches through: <br />{" "}
+              <i>• Manager Reviews: </i>Facilitated discussions with branch
+              managers to uncover localized issues.
+              <br />
+              <i>• Employee Surveys: </i>Gathered feedback from employees to
+              identify pain points affecting retention.
+              <br />
               <b>3. Impact Analysis & Action:</b> Analyzed the collected data,
               which revealed that compensation disparity, incorrect expectations
               setting, and a lack of learning opportunities were primary drivers
@@ -234,7 +243,7 @@ const CaseStudies = () => {
             </p>
 
             <div className="content-blog">
-              <img src={cs1} />
+              <img src={cs3} />
               <p className="blogMain-para blogMain-para-nopadding">
                 <b>Client Challenge:</b>
                 <br /> A leading SaaS multinational corporation (MNC) faced a
@@ -249,7 +258,12 @@ const CaseStudies = () => {
                 days. Additionally, the number of interviews per position surged
                 by 2.3 times, with offer rejection rates notably higher in teams
                 with lower average tenures. <br /> <br />
-                <b>Talenode’s Intervention:</b>
+                
+              </p>
+            </div>
+
+            <p className="blogMain-para pt-4">
+            <b>Talenode’s Intervention:</b>
                 <br /> To address these challenges, Talenode performed
                 regression analysis on candidate experience survey data,
                 correlating responses with offer acceptance rates. Findings
@@ -262,8 +276,7 @@ const CaseStudies = () => {
                 insight led us to develop targeted interventions, including
                 tailored training programs for hiring managers to enhance their
                 EVP communication and improve interview techniques.
-              </p>
-            </div>
+            </p>
 
             <p className="blogMain-para">
               <b>Impact Analysis & Findings:</b>
